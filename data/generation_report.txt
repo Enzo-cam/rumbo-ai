@@ -1,0 +1,112 @@
+================================================================================
+DATASET GENERATION REPORT
+================================================================================
+
+DRIVERS DATASET STATISTICS
+--------------------------------------------------------------------------------
+Total records: 350
+
+safety_score:
+  Mean: 78.08
+  Std:  8.63
+  Min:  47.50
+  Max:  95.07
+
+efficiency_score:
+  Mean: 70.91
+  Std:  8.87
+  Min:  28.44
+  Max:  91.84
+
+compliance_score:
+  Mean: 79.80
+  Std:  7.28
+  Min:  55.37
+  Max:  96.46
+
+driver_score_base:
+  Mean: 76.00
+  Std:  5.55
+  Min:  55.38
+  Max:  87.19
+
+driven_km:
+  Mean: 15023.31
+  Std:  4914.29
+  Min:  5000.00
+  Max:  28225.00
+
+eta_difference:
+  Mean: 0.14
+  Std:  14.10
+  Min:  -43.50
+  Max:  37.52
+
+
+ROUTES DATASET STATISTICS
+--------------------------------------------------------------------------------
+Total records: 150
+
+total_distance_km:
+  Mean: 487.69
+  Std:  230.58
+  Min:  79.75
+  Max:  1136.44
+
+avg_speed_kmh:
+  Mean: 69.46
+  Std:  12.66
+  Min:  34.76
+  Max:  96.26
+
+navigation_steps_count:
+  Mean: 24.79
+  Std:  18.44
+  Min:  5.00
+  Max:  96.00
+
+avg_compliance_index:
+  Mean: 1.37
+  Std:  0.12
+  Min:  1.06
+  Max:  1.65
+
+time_variability_min:
+  Mean: 30.52
+  Std:  7.83
+  Min:  9.53
+  Max:  51.06
+
+normalized_breakdown_rate:
+  Mean: 0.11
+  Std:  0.02
+  Min:  0.07
+  Max:  0.15
+
+fuel_efficiency_lt_km:
+  Mean: 0.35
+  Std:  0.06
+  Min:  0.22
+  Max:  0.51
+
+peligrosity_score:
+  Mean: 27.61
+  Std:  5.42
+  Min:  15.12
+  Max:  41.49
+
+efficiency_score:
+  Mean: 53.47
+  Std:  9.00
+  Min:  31.13
+  Max:  78.82
+
+operational_complexity_score:
+  Mean: 23.02
+  Std:  6.65
+  Min:  9.81
+  Max:  45.78
+
+================================================================================
+Generation completed successfully!
+================================================================================

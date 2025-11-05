@@ -1,0 +1,221 @@
+{
+  "drivers": {
+    "description": "Synthetic driver dataset with performance and behavior metrics",
+    "n_records": 350,
+    "columns": {
+      "driver_id": {
+        "type": "string",
+        "description": "Unique driver identifier"
+      },
+      "dispatch_compliance": {
+        "type": "float",
+        "range": [
+          0,
+          100
+        ],
+        "description": "Compliance with dispatch schedules (%)"
+      },
+      "route_deviations": {
+        "type": "float",
+        "range": [
+          0,
+          20
+        ],
+        "description": "Number of route deviations"
+      },
+      "unauthorized_stops": {
+        "type": "int",
+        "range": [
+          0,
+          10
+        ],
+        "description": "Count of unauthorized stops"
+      },
+      "driven_km": {
+        "type": "float",
+        "range": [
+          5000,
+          35000
+        ],
+        "description": "Total kilometers driven annually"
+      },
+      "eta_difference": {
+        "type": "float",
+        "range": [
+          -60,
+          60
+        ],
+        "description": "Average ETA difference in minutes (negative=early, positive=late)"
+      },
+      "unplanned_absences": {
+        "type": "int",
+        "range": [
+          0,
+          15
+        ],
+        "description": "Count of unplanned absences"
+      },
+      "carbon_footprint": {
+        "type": "float",
+        "range": [
+          1000,
+          5000
+        ],
+        "description": "Annual carbon footprint (kg CO2)"
+      },
+      "driving_aggressiveness": {
+        "type": "float",
+        "range": [
+          0,
+          100
+        ],
+        "description": "Driving aggressiveness score (higher=more aggressive)"
+      },
+      "energy_efficiency": {
+        "type": "float",
+        "range": [
+          30,
+          100
+        ],
+        "description": "Energy efficiency score (higher=better)"
+      },
+      "safety_score": {
+        "type": "float",
+        "range": [
+          0,
+          100
+        ],
+        "description": "Composite safety score"
+      },
+      "efficiency_score": {
+        "type": "float",
+        "range": [
+          0,
+          100
+        ],
+        "description": "Composite efficiency score"
+      },
+      "compliance_score": {
+        "type": "float",
+        "range": [
+          0,
+          100
+        ],
+        "description": "Composite compliance score"
+      },
+      "driver_score_base": {
+        "type": "float",
+        "range": [
+          0,
+          100
+        ],
+        "description": "Base driver score (weighted combination)"
+      }
+    }
+  },
+  "routes": {
+    "description": "Synthetic route dataset with operational and risk metrics - Based on 7 key complexity variables",
+    "n_records": 150,
+    "columns": {
+      "route_id": {
+        "type": "string",
+        "description": "Unique route identifier"
+      },
+      "total_distance_km": {
+        "type": "float",
+        "range": [
+          50,
+          2000
+        ],
+        "description": "Total route distance in kilometers (OSRM-based: routes[0].distance / 1000)",
+        "source": "Static - OSRM API"
+      },
+      "avg_speed_kmh": {
+        "type": "float",
+        "range": [
+          30,
+          110
+        ],
+        "description": "Average speed in km/h - proxy for road type (high=highway, low=urban/mountain)",
+        "source": "Static - OSRM API",
+        "formula": "(distance_km) / (duration_hours)"
+      },
+      "navigation_steps_count": {
+        "type": "int",
+        "range": [
+          5,
+          200
+        ],
+        "description": "Number of navigation steps/turns - measures navigation complexity",
+        "source": "Static - OSRM API",
+        "formula": "len(routes[0].legs[0].steps)"
+      },
+      "avg_compliance_index": {
+        "type": "float",
+        "range": [
+          0.8,
+          2.0
+        ],
+        "description": "Route predictability: actual_time / planned_time (1.0=perfect, 1.5=50% longer)",
+        "source": "Historical - Database",
+        "formula": "AVG(actual_time_minutes) / AVG(planned_time_minutes)"
+      },
+      "time_variability_min": {
+        "type": "float",
+        "range": [
+          5,
+          120
+        ],
+        "description": "Standard deviation of travel times in minutes - measures consistency",
+        "source": "Historical - Database",
+        "formula": "STDDEV(actual_time_minutes)"
+      },
+      "normalized_breakdown_rate": {
+        "type": "float",
+        "range": [
+          0.0,
+          0.3
+        ],
+        "description": "Breakdown rate per trip - measures physical risk and road conditions",
+        "source": "Historical - Database",
+        "formula": "SUM(had_breakdown) / COUNT(total_trips)"
+      },
+      "fuel_efficiency_lt_km": {
+        "type": "float",
+        "range": [
+          0.15,
+          0.6
+        ],
+        "description": "Fuel consumption in liters per km - proxy for engine effort and terrain difficulty",
+        "source": "Historical - Database",
+        "formula": "AVG(liters_consumed / km_traveled)"
+      },
+      "peligrosity_score": {
+        "type": "float",
+        "range": [
+          0,
+          100
+        ],
+        "description": "Danger/risk score (higher=more dangerous)"
+      },
+      "efficiency_score": {
+        "type": "float",
+        "range": [
+          0,
+          100
+        ],
+        "description": "Route efficiency score"
+      },
+      "operational_complexity_score": {
+        "type": "float",
+        "range": [
+          0,
+          100
+        ],
+        "description": "Operational complexity score"
+      }
+    }
+  },
+  "generation_date": "2025-10-29",
+  "random_seed": 42
+}

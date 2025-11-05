@@ -1,0 +1,97 @@
+================================================================================
+DRIVER-ROUTE MATCHING REPORT
+================================================================================
+
+MATCHING STATISTICS
+--------------------------------------------------------------------------------
+Total drivers available: 350
+Total routes to assign: 150
+Successful assignments: 150
+Unassigned drivers: 200
+
+Match Quality Metrics:
+  Average match score: 79.78
+  Average score difference: 33.64
+  Std score difference: 8.50
+
+Driver-Route Fit Analysis:
+  Over-qualified drivers: 150 (100.0%)
+  Well-matched: 0 (0.0%)
+  Under-qualified: 0 (0.0%)
+
+Assignments by Route Difficulty:
+  Easy: 94 assignments (avg driver score: 74.20)
+  Medium: 56 assignments (avg driver score: 69.07)
+
+TOP 10 BEST MATCHES
+--------------------------------------------------------------------------------
+DRV00124 → RTE0066
+  Match Score: 98.92
+  Driver: 55.05 (Safety: 64.48, Efficiency: 28.44)
+  Route: 41.82 (Medium, 627 km)
+  Fit: +13.23 points
+
+DRV00130 → RTE0116
+  Match Score: 96.34
+  Driver: 67.33 (Safety: 60.11, Efficiency: 77.21)
+  Route: 41.49 (Medium, 375 km)
+  Fit: +25.84 points
+
+DRV00312 → RTE0031
+  Match Score: 95.46
+  Driver: 62.89 (Safety: 66.12, Efficiency: 47.42)
+  Route: 40.12 (Medium, 282 km)
+  Fit: +22.77 points
+
+DRV00146 → RTE0129
+  Match Score: 95.27
+  Driver: 65.78 (Safety: 62.81, Efficiency: 65.45)
+  Route: 40.47 (Medium, 684 km)
+  Fit: +25.31 points
+
+DRV00237 → RTE0063
+  Match Score: 93.79
+  Driver: 70.57 (Safety: 67.69, Efficiency: 70.18)
+  Route: 43.28 (Medium, 276 km)
+  Fit: +27.29 points
+
+DRV00236 → RTE0117
+  Match Score: 93.68
+  Driver: 65.72 (Safety: 63.45, Efficiency: 58.17)
+  Route: 43.27 (Medium, 276 km)
+  Fit: +22.45 points
+
+DRV00304 → RTE0105
+  Match Score: 93.61
+  Driver: 66.48 (Safety: 75.75, Efficiency: 51.73)
+  Route: 52.02 (Medium, 651 km)
+  Fit: +14.46 points
+
+DRV00155 → RTE0111
+  Match Score: 92.62
+  Driver: 75.75 (Safety: 75.43, Efficiency: 79.68)
+  Route: 50.60 (Medium, 1059 km)
+  Fit: +25.15 points
+
+DRV00230 → RTE0057
+  Match Score: 92.47
+  Driver: 62.93 (Safety: 55.68, Efficiency: 59.31)
+  Route: 41.84 (Medium, 1136 km)
+  Fit: +21.09 points
+
+DRV00080 → RTE0017
+  Match Score: 92.40
+  Driver: 73.44 (Safety: 80.80, Efficiency: 57.31)
+  Route: 42.64 (Medium, 396 km)
+  Fit: +30.80 points
+
+
+UNASSIGNED DRIVERS ANALYSIS
+--------------------------------------------------------------------------------
+Total unassigned: 200
+Average score: 78.79
+Score range: [68.96, 88.04]
+
+================================================================================
+Matching completed successfully!
+================================================================================

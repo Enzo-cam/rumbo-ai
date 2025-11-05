@@ -1,0 +1,49 @@
+================================================================================
+SCORING REPORT
+================================================================================
+
+DRIVER SCORING SUMMARY
+--------------------------------------------------------------------------------
+Total drivers: 350
+
+Score Distribution:
+  Base Score:     Mean=76.00, Std=5.55
+  Final Score:    Mean=76.00, Std=5.55
+  Adjusted Score: Mean=76.00, Std=5.55
+
+Kilometer Balancing:
+  Mean km driven: 15023.31
+  Mean km balance: -0.00
+  Adjustment impact: ±0.60 points
+
+Top 5 Drivers:
+  DRV00134: Score=88.04 (Safety=95.07, Efficiency=76.64)
+  DRV00250: Score=87.63 (Safety=82.90, Efficiency=90.40)
+  DRV00183: Score=87.25 (Safety=85.72, Efficiency=85.96)
+  DRV00061: Score=86.95 (Safety=94.93, Efficiency=78.95)
+  DRV00299: Score=86.72 (Safety=88.36, Efficiency=86.92)
+
+
+ROUTE SCORING SUMMARY
+--------------------------------------------------------------------------------
+Total routes: 150
+
+Score Distribution:
+  Route Score: Mean=38.64, Std=5.39
+
+Difficulty Distribution:
+  Easy: 94 routes (62.7%)
+  Medium: 56 routes (37.3%)
+  Hard: 0 routes (0.0%)
+  Expert: 0 routes (0.0%)
+
+Top 5 Most Demanding Routes:
+  RTE0105: Score=52.02 (Medium, 651 km)
+  RTE0111: Score=50.60 (Medium, 1059 km)
+  RTE0121: Score=50.41 (Medium, 626 km)
+  RTE0090: Score=50.37 (Medium, 803 km)
+  RTE0040: Score=49.82 (Medium, 680 km)
+
+================================================================================
+Scoring completed successfully!
+================================================================================
