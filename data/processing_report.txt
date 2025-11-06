@@ -1,0 +1,36 @@
+================================================================================
+FEATURE PROCESSING REPORT
+================================================================================
+
+DRIVER STATISTICS
+--------------------------------------------------------------------------------
+Total drivers processed: 32
+Total distance: 377,900 km
+Total fuel consumed: 103,607 liters
+Total CO2 emissions: 277,667 kg
+
+AVERAGE SCORES
+--------------------------------------------------------------------------------
+Safety Score: 93.48
+Efficiency Score: 54.05
+Compliance Score: 87.24
+Overall Score: 78.12
+
+CO2 EMISSIONS
+--------------------------------------------------------------------------------
+Average CO2 per km: 0.732 kg
+Total CO2 emissions: 277,667 kg
+CO2 from idling: 6,035 kg (2.2% of total)
+Carbon efficiency score: 0.00
+
+TOP 5 DRIVERS (by overall score)
+--------------------------------------------------------------------------------
+  6445 - CANCIO MARCELO GABRIEL: 84.50 (Safety: 97.65, Efficiency: 73.86)
+  7005 - GONZALEZ SERGIO ALBERTO: 84.19 (Safety: 98.60, Efficiency: 61.18)
+  7278 - GARBERO DINO HERNAN: 83.25 (Safety: 97.40, Efficiency: 62.13)
+  7010 - TRONCOSO FAVIO SILVESTRE: 83.02 (Safety: 93.16, Efficiency: 59.90)
+  7561 - GATICA ENZO DAVID: 82.19 (Safety: 98.02, Efficiency: 56.70)
+
+================================================================================
+Processing completed successfully!
+================================================================================
