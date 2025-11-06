@@ -46,13 +46,16 @@ OUTPUTS_DIR = Path(__file__).parent.parent / "outputs"
 MODELS_DIR.mkdir(exist_ok=True)
 OUTPUTS_DIR.mkdir(exist_ok=True)
 
-# Clustering features (based on RUMBO.md specification)
+# Clustering features (updated with high-variance technical metrics)
 CLUSTERING_FEATURES = [
-    'harsh_braking_per_100km_avg',
-    'fuel_per_100km_avg',
-    'idle_time_percentage_avg',
-    'scania_driver_support_score_avg',
-    'speeding_percentage_avg'
+    'brake_score_avg',                      # UseOfBrakes: 53-97 (technical quality)
+    'anticipation_score_avg',               # Anticipation: 45-98 (preventive driving)
+    'hill_driving_score_avg',               # Hill driving: 0-100 (terrain skill)
+    'harsh_braking_count',                  # Count: 0-10 (absolute frequency)
+    'fuel_per_100km_avg',                   # Fuel: 21-33 L/100km
+    'coasting_percentage_avg',              # Coasting: 1-6% (advanced technique)
+    'idle_time_percentage_avg',             # Idle: 6-26%
+    'total_distance_km',                    # Distance: 5653-14853 (experience)
 ]
 
 # Setup logging

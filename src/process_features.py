@@ -121,16 +121,18 @@ def extract_driver_features(driver: dict) -> dict:
 
     # Calculate our composite scores
     safety_score = calculate_safety_score(
-        harsh_braking_per_100km,
-        speeding_percentage,
+        hill_driving_score,
+        anticipation_score,
         brake_score,
-        harsh_accel_per_100km
+        harsh_braking_count,
+        speeding_percentage
     )
 
     efficiency_score = calculate_efficiency_score(
         fuel_per_100km,
         idle_time_percentage,
         cruise_control_usage_pct,
+        coasting_percentage,
         anticipation_score
     )
 
@@ -188,53 +190,61 @@ def extract_driver_features(driver: dict) -> dict:
     }
 
 
-def calculate_safety_score(harsh_braking: float, speeding: float,
-                          brake_score: float, harsh_accel: float) -> float:
+def calculate_safety_score(hill_driving: float, anticipation: float,
+                          brake_quality: float, harsh_brake_count: int,
+                          speeding: float) -> float:
     """
-    Calculate composite safety score.
+    Calculate composite safety score using technical quality metrics.
 
     Components:
-    - Low harsh braking (40%)
-    - Low speeding (30%)
-    - High brake score (20%)
-    - Low harsh acceleration (10%)
+    - Hill driving skill (25%): Scania technical score
+    - Anticipation (25%): Scania technical score for preventive driving
+    - Brake quality (20%): Scania technical score for braking technique
+    - Harsh brake count (20%): Absolute count of harsh braking events
+    - Speeding (10%): Percentage of time exceeding speed limit
 
     Returns:
         float: Safety score (0-100)
     """
-    # Normalize harsh braking (inverse: lower is better)
-    harsh_braking_norm = max(0, 100 - (harsh_braking * 100))
+    # Hill driving score already 0-100 (higher is better)
+    hill_driving_norm = hill_driving
 
-    # Normalize speeding (inverse: lower is better)
-    speeding_norm = max(0, 100 - speeding)
+    # Anticipation score already 0-100 (higher is better)
+    anticipation_norm = anticipation
 
-    # Brake score is already 0-100 (higher is better)
-    brake_score_norm = brake_score
+    # Brake quality score already 0-100 (higher is better)
+    brake_quality_norm = brake_quality
 
-    # Normalize harsh acceleration (inverse: lower is better)
-    harsh_accel_norm = max(0, 100 - (harsh_accel * 100))
+    # Harsh brake count: 0 = 100pts, 10 = 0pts
+    harsh_brake_norm = max(0, 100 - (harsh_brake_count * 10))
+
+    # Speeding: 0% = 100pts, 2% = 0pts
+    speeding_norm = max(0, 100 - (speeding * 50))
 
     # Weighted composite
     safety_score = (
-        0.40 * harsh_braking_norm +
-        0.30 * speeding_norm +
-        0.20 * brake_score_norm +
-        0.10 * harsh_accel_norm
+        0.25 * hill_driving_norm +
+        0.25 * anticipation_norm +
+        0.20 * brake_quality_norm +
+        0.20 * harsh_brake_norm +
+        0.10 * speeding_norm
     )
 
     return safety_score
 
 
 def calculate_efficiency_score(fuel: float, idle: float,
-                               cruise: float, anticipation: float) -> float:
+                               cruise: float, coasting: float,
+                               anticipation: float) -> float:
     """
     Calculate composite efficiency score.
 
     Components:
-    - Low fuel consumption (35%)
+    - Low fuel consumption (30%)
     - Low idle time (25%)
-    - High cruise control usage (20%)
-    - High anticipation score (20%)
+    - High cruise control usage (25%)
+    - High coasting (20%): technique for momentum usage
+    - High anticipation score (included in other metrics)
 
     Returns:
         float: Efficiency score (0-100)
@@ -253,15 +263,15 @@ def calculate_efficiency_score(fuel: float, idle: float,
     # Cruise control usage percentage (higher is better)
     cruise_norm = cruise
 
-    # Anticipation score is already 0-100 (higher is better)
-    anticipation_norm = anticipation
+    # Coasting: 6% is excellent, 1% is poor (higher is better)
+    coasting_norm = min(100, (coasting / 6) * 100)
 
     # Weighted composite
     efficiency_score = (
-        0.35 * fuel_norm +
+        0.30 * fuel_norm +
         0.25 * idle_norm +
-        0.20 * cruise_norm +
-        0.20 * anticipation_norm
+        0.25 * cruise_norm +
+        0.20 * coasting_norm
     )
 
     return efficiency_score
