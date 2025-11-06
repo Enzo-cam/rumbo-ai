@@ -236,8 +236,12 @@ def calculate_efficiency_score(fuel: float, idle: float,
         float: Efficiency score (0-100)
     """
     # Normalize fuel consumption (inverse: lower is better)
-    # Assume 25 L/100km is good, 35 L/100km is bad
-    fuel_norm = max(0, 100 - ((fuel - 20) * 5))
+    # Based on Scania Fleet Management benchmarks for Euro 6 long-haul trucks:
+    # - Excellent: 22-26 L/100km (optimal driving, efficient load)
+    # - Average: 26-30 L/100km
+    # - Poor: >32 L/100km (aggressive driving, overload)
+    # Formula: linear scale from 22 (100 pts) to 32 (0 pts)
+    fuel_norm = max(0, min(100, ((32 - fuel) / 10) * 100))
 
     # Normalize idle time (inverse: lower is better)
     idle_norm = max(0, 100 - (idle * 5))
@@ -270,18 +274,26 @@ def calculate_compliance_score(distance: float, avg_speed: float) -> float:
     Returns:
         float: Compliance score (0-100)
     """
-    # Normalize total distance (experience indicator)
-    # Assume 10,000 km is minimum, 30,000 km is excellent
-    distance_norm = min(100, (distance / 100))
+    # Normalize total distance (experience/activity indicator)
+    # Based on real data: October 2024 (28 business days in Argentina)
+    # - Low activity: <5,000 km (~180 km/day)
+    # - Average: 8,000 km (~285 km/day)
+    # - High activity: 15,000+ km (~535 km/day)
+    # Formula: linear scale from 0 km (0 pts) to 15,000 km (100 pts)
+    distance_norm = min(100, (distance / 150))
 
     # Normalize average speed (should be reasonable, not too low or high)
-    # Assume 60-80 km/h is optimal
-    if 60 <= avg_speed <= 80:
+    # Note: Scania's AverageSpeed = distance / total_engine_time (includes idle & PTO)
+    # Based on real interurban routes in Argentina with loading/unloading stops:
+    # - Too low: <35 km/h (excessive idle, delays)
+    # - Optimal: 50-70 km/h (cruise 80-90 km/h with realistic stops)
+    # - Risky: >80 km/h (speeding, safety risk)
+    if 50 <= avg_speed <= 70:
         speed_norm = 100
-    elif avg_speed < 60:
-        speed_norm = max(0, 50 + (avg_speed - 40))
-    else:  # > 80
-        speed_norm = max(0, 100 - ((avg_speed - 80) * 2))
+    elif avg_speed < 50:
+        speed_norm = max(0, 50 + (avg_speed - 35) * 2)
+    else:  # > 70
+        speed_norm = max(0, 100 - ((avg_speed - 70) * 3))
 
     # Weighted composite
     compliance_score = (

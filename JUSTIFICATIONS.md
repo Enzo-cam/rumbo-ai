@@ -100,12 +100,13 @@ compliance = 0.60 * distance + 0.40 * speed_range
 
 | Feature | Peso | Evidencia |
 |---------|------|-----------|
-| Distance | 60% | Experiencia: choferes >15,000 km tienen 45% menos incidentes |
-| Speed Range | 40% | Mantenerse en 60-80 km/h es óptimo (balance seguridad/eficiencia) |
+| Distance | 60% | Actividad reciente: indicador de disponibilidad y experiencia operativa |
+| Speed Range | 40% | Mantenerse en 50-70 km/h es óptimo (balance seguridad/eficiencia) |
 
 **Fundamento:**
-- Distancia = proxy de experiencia y confiabilidad
-- Velocidad constante en rango óptimo = mejor predictor de comportamiento disciplinado
+- Distancia = proxy de actividad reciente y disponibilidad (más km = más experiencia operativa)
+- Velocidad en rango óptimo (ajustado por realidad de idle/PTO) = predictor de comportamiento disciplinado
+- **Nota:** Threshold de distance ajustado a 15k km (realista para 28 días) vs 30k km (irreal)
 
 ---
 
@@ -129,19 +130,20 @@ harsh_braking_norm = max(0, 100 - (harsh_braking * 100))
 ### 3.2 Fuel Consumption
 
 ```python
-fuel_norm = max(0, 100 - ((fuel - 20) * 5))
+fuel_norm = max(0, min(100, ((32 - fuel) / 10) * 100))
 ```
 
 **Lógica:**
-- 20 L/100km → 100 puntos (excelente)
-- 25 L/100km → 75 puntos (bueno)
-- 30 L/100km → 50 puntos (promedio)
-- 35 L/100km → 25 puntos (malo)
+- 22 L/100km → 100 puntos (excelente - manejo óptimo)
+- 27 L/100km → 50 puntos (promedio)
+- 32 L/100km → 0 puntos (crítico - manejo agresivo/sobrecarga)
 
 **Threshold basado en:**
-- Scania heavy truck average: 24-28 L/100km
-- Best performers: 20-23 L/100km
-- Formula: linear penalty de 5 puntos por litro extra
+- Scania Fleet Management benchmarks para camiones Euro 6 de larga distancia
+- Excelente: 22-26 L/100km (optimal driving, efficient load)
+- Promedio: 26-30 L/100km
+- Malo: >32 L/100km (aggressive driving, overload)
+- Formula: escala lineal de 22 (100 pts) a 32 (0 pts)
 
 ---
 
@@ -160,25 +162,47 @@ idle_norm = max(0, 100 - (idle * 5))
 
 ---
 
-### 3.4 Speed Range
+### 3.4 Distance (Experience/Activity Indicator)
 
 ```python
-if 60 <= avg_speed <= 80:
-    speed_norm = 100  # Óptimo
-elif avg_speed < 60:
-    speed_norm = 50 + (avg_speed - 40)  # Penalización suave
-else:  # > 80
-    speed_norm = 100 - ((avg_speed - 80) * 2)  # Penalización fuerte
+distance_norm = min(100, (distance / 150))
 ```
 
 **Lógica:**
-- 60-80 km/h: Rango óptimo (eficiencia + seguridad)
-- <60 km/h: Penalización suave (puede ser tráfico/terreno)
+- 0 km → 0 puntos (sin actividad)
+- 7,500 km → 50 puntos (actividad promedio)
+- 15,000 km → 100 puntos (alta actividad)
+
+**Threshold basado en:**
+- Análisis de datos reales: Octubre 2024 (28 días laborales en Argentina)
+- Baja actividad: <5,000 km (~180 km/día)
+- Actividad promedio: 8,000 km (~285 km/día)
+- Alta actividad: 15,000+ km (~535 km/día)
+- **Nota:** Pocos choferes superan 15k km en 28 días, threshold ajustado a realidad
+
+---
+
+### 3.5 Speed Range
+
+```python
+if 50 <= avg_speed <= 70:
+    speed_norm = 100  # Óptimo
+elif avg_speed < 50:
+    speed_norm = max(0, 50 + (avg_speed - 35) * 2)  # Penalización suave
+else:  # > 70
+    speed_norm = max(0, 100 - ((avg_speed - 70) * 3))  # Penalización fuerte
+```
+
+**Lógica:**
+- 50-70 km/h: Rango óptimo (eficiencia + seguridad)
+- <35 km/h: Penalización fuerte (excesivo idle, delays)
 - >80 km/h: Penalización fuerte (riesgo + consumo aumentan exponencialmente)
 
-**Fundamento:**
-- Scania optimal speed para heavy trucks: 65-75 km/h
-- >80 km/h: resistencia del aire aumenta cuadráticamente
+**Fundamento CRÍTICO:**
+- **Scania AverageSpeed = distance / total_engine_running_time** (incluye idle y PTO)
+- Rutas interurbanas Argentina: velocidad crucero 80-90 km/h pero con paradas, idle, carga/descarga
+- Promedio real con stops: 50-70 km/h es razonable y realista
+- **Ajustado de 60-80 a 50-70** basado en datos reales del análisis de Octubre 2024
 
 ---
 
@@ -271,10 +295,16 @@ features = [
 **Top performers deben tener:**
 - Safety >85
 - Harsh braking <0.3/100km
-- Fuel consumption <26 L/100km
+- Fuel consumption <27 L/100km (ajustado a realidad Scania Euro 6)
+- Average speed 50-70 km/h (con idle/PTO incluido)
 - Cluster = "Conservador"
 
 **Si top 5 no cumplen → revisar pesos.**
+
+**Nota:** Thresholds ajustados basados en:
+1. Datos reales de Octubre 2024 (Villa Mercedes)
+2. Especificaciones Scania Fleet Management
+3. Realidad operativa Argentina (rutas interurbanas con stops)
 
 ---
 
