@@ -231,7 +231,7 @@ driver_score_adjusted = driver_score_base + (0.15 * km_balance_scaled)
 ```python
 co2_total_kg = total_fuel_liters * 2.68
 co2_per_km = co2_total_kg / distance_km
-carbon_efficiency_score = max(0, 100 - (co2_per_km * 350))
+carbon_efficiency_score = max(0, min(100, ((0.80 - co2_per_km) / 0.15) * 100))
 ```
 
 **Justificación:**
@@ -239,11 +239,26 @@ carbon_efficiency_score = max(0, 100 - (co2_per_km * 350))
 | Parámetro | Valor | Fuente |
 |-----------|-------|--------|
 | CO2/Liter | 2.68 kg | EPA (Environmental Protection Agency) |
-| Normalización | ×350 | Promedio flota 0.7 kg/km → 100 - (0.7×350) ≈ 55 puntos |
+| Threshold Excelente | 0.65 kg/km | Basado en P10 de datos reales (0.690 kg/km) |
+| Threshold Malo | 0.80 kg/km | Basado en P90 de datos reales (0.767 kg/km) con margen |
+| Rango normalización | 0.15 kg/km | Diferencia entre thresholds (0.80 - 0.65) |
+
+**Distribución real (Octubre 2024, Villa Mercedes - 32 choferes):**
+- P10 (mejor 10%): 0.690 kg/km
+- Mediana: 0.738 kg/km
+- P90 (peor 10%): 0.767 kg/km
+- Rango total: 0.563 - 0.891 kg/km
+
+**Enfoque: Benchmark relativo intra-flota**
+- Score refleja posición relativa dentro de la flota
+- Útil para decisiones de recomendación: "¿Quién es el mejor chofer disponible?"
+- Todos operan en mismo contexto (Villa Mercedes, rutas similares, mismos vehículos)
+- Alternativa (benchmark absoluto contra estándares europeos) sería demasiado estricta
 
 **Conexión natural:**
 - Efficiency score alto → CO2 bajo (misma causa: mejor conducción)
 - Idle time alto → CO2 desperdiciado (evitable 100%)
+- Fuel consumption correlaciona directamente con CO2 (r ≈ 0.99)
 
 ---
 

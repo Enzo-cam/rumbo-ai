@@ -113,7 +113,11 @@ def extract_driver_features(driver: dict) -> dict:
     co2_total_kg = total_fuel_liters * CO2_PER_LITER_DIESEL
     co2_per_km = (co2_total_kg / total_distance_km) if total_distance_km > 0 else 0
     co2_from_idling_kg = fuel_idling_liters * CO2_PER_LITER_DIESEL
-    carbon_efficiency_score = max(0, 100 - (co2_per_km * 350))
+
+    # Carbon efficiency score based on real data distribution (Oct 2024, Villa Mercedes)
+    # P10: 0.690 kg/km, Median: 0.738 kg/km, P90: 0.767 kg/km
+    # Formula: linear scale from 0.65 kg/km (100 pts) to 0.80 kg/km (0 pts)
+    carbon_efficiency_score = max(0, min(100, ((0.80 - co2_per_km) / 0.15) * 100))
 
     # Calculate our composite scores
     safety_score = calculate_safety_score(
