@@ -1,0 +1,34 @@
+================================================================================
+DRIVER CLUSTERING REPORT
+================================================================================
+
+MODEL PARAMETERS
+--------------------------------------------------------------------------------
+Algorithm: K-Means
+Number of clusters (K): 2
+Random state: 42
+Iterations: 2
+Inertia: 121.64
+
+CLUSTER PROFILES
+--------------------------------------------------------------------------------
+
+Cluster 0: Conservador
+  Number of drivers: 28 (87.5%)
+  Safety Score: 94.18
+  Efficiency Score: 54.64
+  Harsh Braking: 0.000/100km
+  Fuel Consumption: 27.36 L/100km
+  Scania Support Score: 74.46
+
+Cluster 1: Conservador
+  Number of drivers: 4 (12.5%)
+  Safety Score: 88.61
+  Efficiency Score: 49.88
+  Harsh Braking: 0.100/100km
+  Fuel Consumption: 27.00 L/100km
+  Scania Support Score: 56.00
+
+================================================================================
+Clustering completed successfully!
+================================================================================
