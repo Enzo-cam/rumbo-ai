@@ -21,7 +21,7 @@ CO2 EMISSIONS
 Average CO2 per km: 0.732 kg
 Total CO2 emissions: 277,667 kg
 CO2 from idling: 6,035 kg (2.2% of total)
-Carbon efficiency score: 0.00
+Carbon efficiency score: 45.83
 
 TOP 5 DRIVERS (by overall score)
 --------------------------------------------------------------------------------
