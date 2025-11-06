@@ -194,11 +194,9 @@ def fetch_driver_evaluation_report(
         logger.info(f"Successfully fetched data")
 
         # Log basic stats
-        if 'EvaluationVehicles' in data:
-            vehicles = data.get('EvaluationVehicles', [])
-            total_trips = sum(len(v.get('Trips', [])) for v in vehicles)
-            logger.info(f"Total vehicles: {len(vehicles)}")
-            logger.info(f"Total trips: {total_trips}")
+        if 'Drivers' in data:
+            drivers = data.get('Drivers', [])
+            logger.info(f"Total drivers: {len(drivers)}")
 
         return data
 
@@ -232,7 +230,7 @@ def save_raw_data(data: Dict, output_path: Path) -> None:
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
 
-        logger.info(f"✓ Saved raw data to: {output_path}")
+        logger.info(f"OK - Saved raw data to: {output_path}")
 
         # Log file size
         file_size = output_path.stat().st_size
@@ -256,26 +254,13 @@ def generate_metadata(data: Dict, start_date: str, end_date: str) -> Dict:
     Returns:
         Dict: Metadata dictionary
     """
-    vehicles = data.get('EvaluationVehicles', [])
-
-    # Collect unique drivers
-    drivers = set()
-    trips = []
-
-    for vehicle in vehicles:
-        for trip in vehicle.get('Trips', []):
-            driver_id = trip.get('DriverRef') or trip.get('DriverName')
-            if driver_id:
-                drivers.add(driver_id)
-            trips.append(trip)
+    drivers = data.get('Drivers', [])
 
     metadata = {
         'extraction_date': datetime.now().isoformat(),
         'start_date': start_date,
         'end_date': end_date,
-        'total_vehicles': len(vehicles),
         'total_drivers': len(drivers),
-        'total_trips': len(trips),
         'api_version': 'v2',
         'data_source': 'Scania Driver Evaluation Report'
     }
@@ -357,16 +342,14 @@ def main():
         with open(metadata_path, 'w') as f:
             json.dump(metadata, f, indent=2)
 
-        logger.info(f"✓ Saved metadata to: {metadata_path}")
+        logger.info(f"OK - Saved metadata to: {metadata_path}")
         logger.info("")
         logger.info("="*80)
         logger.info("EXTRACTION SUMMARY")
         logger.info("="*80)
-        logger.info(f"Total Vehicles: {metadata['total_vehicles']}")
         logger.info(f"Total Drivers: {metadata['total_drivers']}")
-        logger.info(f"Total Trips: {metadata['total_trips']}")
         logger.info("")
-        logger.info("✓ Extraction completed successfully!")
+        logger.info("OK - Extraction completed successfully!")
         logger.info("="*80)
 
     except Exception as e:
