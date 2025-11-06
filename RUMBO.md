@@ -420,6 +420,473 @@ El sistema genera reportes listos para clientes y auditorías:
 
 ---
 
+## 🔬 PIPELINE TÉCNICO: MÓDULO DE CHOFERES (ML/IA)
+
+### Arquitectura del Sistema de Choferes
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│ FASE 1: EXTRACCIÓN DE DATOS (Scania API)                       │
+├─────────────────────────────────────────────────────────────────┤
+│ Input:  Scania Driver Evaluation Report API                    │
+│         - startDate: YYYYMMDDHHMM                               │
+│         - endDate: YYYYMMDDHHMM                                 │
+│         - Período: Últimos 30 días (rolling window)            │
+│                                                                 │
+│ Output: raw_driver_trips.json                                  │
+│         - ~200-500 viajes por período                           │
+│         - 15-20 unidades activas                                │
+│         - Features raw de Scania (30+ campos)                   │
+└─────────────────────────────────────────────────────────────────┘
+                            ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ FASE 2: PROCESAMIENTO Y FEATURE ENGINEERING                    │
+├─────────────────────────────────────────────────────────────────┤
+│ Proceso:                                                        │
+│   1. Limpieza: Manejo de nulls, outliers                       │
+│   2. Agregación: Group by driver_id                            │
+│   3. Cálculo de features compuestas                            │
+│                                                                 │
+│ Features Calculadas (por chofer):                              │
+│                                                                 │
+│ 🛡️ SAFETY FEATURES:                                            │
+│   - harsh_braking_per_100km_avg                                │
+│   - harsh_acceleration_per_100km_avg                           │
+│   - speeding_percentage_avg                                    │
+│   - brake_score_avg (Scania Driver Support)                    │
+│                                                                 │
+│ ⚡ EFFICIENCY FEATURES:                                         │
+│   - fuel_per_100km_avg                                         │
+│   - idle_time_percentage_avg                                   │
+│   - cruise_control_usage_percentage                            │
+│   - anticipation_score_avg                                     │
+│                                                                 │
+│ ✅ COMPLIANCE FEATURES:                                        │
+│   - avg_speed_kmh                                              │
+│   - total_distance_km                                          │
+│   - total_trips                                                │
+│                                                                 │
+│ 🎯 COMPOSITE SCORES:                                           │
+│   - safety_score = f(harsh_braking, speeding, brake_score)    │
+│   - efficiency_score = f(fuel, idle_time, cruise_control)     │
+│   - compliance_score = f(distance, trips, availability)        │
+│                                                                 │
+│ Output: drivers_features.csv                                   │
+└─────────────────────────────────────────────────────────────────┘
+                            ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ FASE 3: CLUSTERING (Unsupervised ML - K-Means)                 │
+├─────────────────────────────────────────────────────────────────┤
+│ Algoritmo: K-Means Clustering                                  │
+│                                                                 │
+│ Features para clustering:                                      │
+│   - harsh_braking_per_100km_avg                                │
+│   - fuel_per_100km_avg                                         │
+│   - idle_time_percentage_avg                                   │
+│   - scania_driver_support_score                                │
+│   - speeding_percentage_avg                                    │
+│                                                                 │
+│ Proceso:                                                        │
+│   1. Normalización: StandardScaler()                           │
+│   2. Método del codo: Determinar K óptimo (K=2 o K=3)         │
+│   3. Entrenar K-Means con K óptimo                             │
+│   4. Validar con Silhouette Score (target: >0.25)              │
+│   5. Interpretar clusters (análisis de centroides)             │
+│                                                                 │
+│ Clusters Esperados (K=3):                                      │
+│   - Cluster 0: "Conservadores"                                 │
+│     • Safety score: 85-95                                      │
+│     • Harsh braking: <0.2/100km                                │
+│     • Fuel efficiency: Óptimo                                  │
+│                                                                 │
+│   - Cluster 1: "Equilibrados"                                  │
+│     • Safety score: 70-85                                      │
+│     • Harsh braking: 0.2-0.5/100km                             │
+│     • Fuel efficiency: Bueno                                   │
+│                                                                 │
+│   - Cluster 2: "Agresivos"                                     │
+│     • Safety score: 60-70                                      │
+│     • Harsh braking: >0.5/100km                                │
+│     • Fuel efficiency: Mejorable                               │
+│                                                                 │
+│ Output: drivers_clustered.csv                                  │
+│         - Incluye: cluster_label, cluster_name                 │
+└─────────────────────────────────────────────────────────────────┘
+                            ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ FASE 4: SCORING Y OUTPUT FINAL                                 │
+├─────────────────────────────────────────────────────────────────┤
+│ Cálculo de Overall Score:                                      │
+│   driver_score = 0.4 * safety + 0.35 * efficiency + 0.25 * compliance
+│                                                                 │
+│ Ajuste por equidad de kilometraje:                             │
+│   km_balance = mean_fleet_km - driver_km                       │
+│   driver_score_adjusted = driver_score + (0.15 * km_balance_scaled)
+│                                                                 │
+│ Output: driver_scores.json                                     │
+│ {                                                               │
+│   "generated_at": "2025-11-06T00:00:00",                       │
+│   "drivers": [                                                  │
+│     {                                                           │
+│       "driver_id": "abc123",                                   │
+│       "driver_name": "Ana Silva",                              │
+│       "cluster": 0,                                            │
+│       "cluster_name": "Conservador",                           │
+│       "safety_score": 95,                                      │
+│       "efficiency_score": 92,                                  │
+│       "compliance_score": 94,                                  │
+│       "overall_score": 94,                                     │
+│       "km_accumulated": 18000,                                 │
+│       "total_trips": 24,                                       │
+│       "co2_per_km": 0.665,                                     │
+│       "harsh_braking_avg": 0.05,                               │
+│       "fuel_consumption_avg": 24.8,                            │
+│       "scania_support_score": 95                               │
+│     }                                                           │
+│   ],                                                            │
+│   "fleet_statistics": {                                        │
+│     "total_drivers": 38,                                       │
+│     "avg_safety_score": 78.5,                                  │
+│     "avg_efficiency_score": 71.2,                              │
+│     "cluster_distribution": {                                  │
+│       "Conservador": 16,                                       │
+│       "Equilibrado": 18,                                       │
+│       "Agresivo": 4                                            │
+│     }                                                           │
+│   }                                                             │
+│ }                                                               │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🚀 EVOLUCIÓN POST-HACKATHON: SUPERVISED LEARNING
+
+### ¿Qué Nos Habilita el Sistema Actual?
+
+El sistema de clustering **unsupervised** que implementamos en la hackathon es un **PoC sólido** que nos habilita a **evolucionar a un sistema de ML supervisado** que aprende continuamente.
+
+### Pipeline de Aprendizaje Continuo
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│ RECOLECCIÓN DE OUTCOMES (Post-Asignación)                      │
+├─────────────────────────────────────────────────────────────────┤
+│ Para cada viaje completado, guardamos:                         │
+│                                                                 │
+│ 1. ETA vs Arrival Time:                                        │
+│    - planned_arrival_time (del roadmap)                        │
+│    - actual_arrival_time (GPS tracking)                        │
+│    - eta_difference_minutes = actual - planned                 │
+│    - on_time_delivery = (eta_difference <= 15 min)             │
+│                                                                 │
+│ 2. Incidents & Events:                                         │
+│    - had_incident (boolean)                                    │
+│    - incident_type (freno brusco, exceso velocidad, etc.)      │
+│    - incident_severity (low/medium/high)                       │
+│                                                                 │
+│ 3. Fuel Performance:                                           │
+│    - predicted_fuel_consumption (del modelo)                   │
+│    - actual_fuel_consumption (telemetría Scania)               │
+│    - fuel_efficiency_delta = actual - predicted                │
+│                                                                 │
+│ 4. Route Compliance:                                           │
+│    - route_deviations_count                                    │
+│    - unauthorized_stops_count                                  │
+│    - compliance_rate (%)                                       │
+│                                                                 │
+│ 5. Customer Feedback:                                          │
+│    - delivery_rating (1-5 stars)                               │
+│    - driver_behavior_rating (1-5)                              │
+│    - cargo_condition_rating (1-5)                              │
+│                                                                 │
+│ Output: trip_outcomes.csv                                      │
+│ Campos:                                                         │
+│   - trip_id, driver_id, route_id, date                         │
+│   - driver_cluster, driver_score, route_score                  │
+│   - match_score (del motor de recomendación)                   │
+│   - eta_difference_minutes                                     │
+│   - on_time_delivery                                           │
+│   - had_incident                                               │
+│   - fuel_efficiency_delta                                      │
+│   - compliance_rate                                            │
+│   - overall_success_score (0-100)                              │
+└─────────────────────────────────────────────────────────────────┘
+                            ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ FEATURE ENGINEERING PARA SUPERVISED LEARNING                   │
+├─────────────────────────────────────────────────────────────────┤
+│ Features del Chofer (X_driver):                                │
+│   - safety_score                                               │
+│   - efficiency_score                                           │
+│   - compliance_score                                           │
+│   - cluster_label                                              │
+│   - harsh_braking_avg                                          │
+│   - fuel_consumption_avg                                       │
+│   - km_accumulated (experiencia)                               │
+│                                                                 │
+│ Features de la Ruta (X_route):                                 │
+│   - route_score_final                                          │
+│   - peligrosity_score                                          │
+│   - complexity_score                                           │
+│   - total_distance_km                                          │
+│   - avg_speed_kmh                                              │
+│   - navigation_steps_count                                     │
+│                                                                 │
+│ Features de Contexto (X_context):                              │
+│   - day_of_week                                                │
+│   - time_of_day (morning/afternoon/night)                      │
+│   - weather_condition (si disponible)                          │
+│   - traffic_level (si disponible)                              │
+│                                                                 │
+│ Target Variable (y):                                           │
+│   - overall_success_score (0-100)                              │
+│   Calculado como:                                              │
+│     success_score = 0.3 * on_time_delivery_score +             │
+│                    0.3 * (1 - incident_occurred) * 100 +       │
+│                    0.2 * fuel_efficiency_score +               │
+│                    0.2 * compliance_rate                       │
+│                                                                 │
+│ Features Combinadas (X_combined):                              │
+│   X = [X_driver, X_route, X_context, match_score]             │
+└─────────────────────────────────────────────────────────────────┘
+                            ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ ENTRENAMIENTO DE MODELO SUPERVISADO                            │
+├─────────────────────────────────────────────────────────────────┤
+│ Modelo: XGBoost Regressor / Random Forest                      │
+│                                                                 │
+│ Objetivo: Predecir overall_success_score antes del viaje       │
+│                                                                 │
+│ Pipeline:                                                       │
+│   1. Split: 80% train, 20% test                                │
+│   2. Cross-validation: 5-fold                                  │
+│   3. Hyperparameter tuning: GridSearchCV                       │
+│   4. Feature importance analysis                               │
+│   5. Evaluar:                                                  │
+│      - MAE (Mean Absolute Error)                               │
+│      - RMSE (Root Mean Squared Error)                          │
+│      - R² score                                                │
+│                                                                 │
+│ Modelos Adicionales (Multi-Target):                            │
+│                                                                 │
+│ A. Predictor de ETA Delay:                                     │
+│    - Input: [driver_features, route_features, hora]            │
+│    - Output: eta_difference_minutes (regresión)                │
+│    - Uso: "Este chofer llegará 12 min tarde en esta ruta"     │
+│                                                                 │
+│ B. Clasificador de Incidentes:                                 │
+│    - Input: [driver_features, route_features]                  │
+│    - Output: incident_probability (0-1)                        │
+│    - Uso: "Probabilidad de incidente: 15%"                     │
+│                                                                 │
+│ C. Predictor de Fuel Efficiency:                               │
+│    - Input: [driver_features, route_features]                  │
+│    - Output: expected_fuel_consumption_liters                  │
+│    - Uso: "Consumo estimado: 285L (vs flota avg: 310L)"       │
+│                                                                 │
+│ Output: trained_models/                                        │
+│   - success_predictor.pkl                                      │
+│   - eta_predictor.pkl                                          │
+│   - incident_classifier.pkl                                    │
+│   - fuel_predictor.pkl                                         │
+└─────────────────────────────────────────────────────────────────┘
+                            ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ REENTRENAMIENTO CONTINUO (CI/CD para ML)                       │
+├─────────────────────────────────────────────────────────────────┤
+│ Frecuencia: Mensual (o cuando se acumulan +500 viajes)        │
+│                                                                 │
+│ Proceso Automatizado:                                          │
+│   1. Extraer nuevos trip_outcomes del último mes               │
+│   2. Agregar a dataset histórico                               │
+│   3. Re-entrenar modelos con datos actualizados                │
+│   4. Validar performance (si R² > 0.7, deploy)                 │
+│   5. A/B testing: comparar nuevo modelo vs anterior            │
+│   6. Si nuevo modelo es mejor (+5% accuracy):                  │
+│      - Deploy a producción                                     │
+│      - Actualizar driver_scores.json                           │
+│   7. Monitorear drift (concept drift detection)                │
+│                                                                 │
+│ Métricas de Monitoreo:                                         │
+│   - Model accuracy over time                                   │
+│   - Feature importance drift                                   │
+│   - Prediction vs actual (residuals analysis)                  │
+│   - Business KPIs (on-time delivery rate, incident rate)       │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 💡 CASOS DE USO: APRENDIZAJE CONTINUO
+
+### Caso 1: Aprendiendo de ETAs
+
+**Escenario:**
+- Ruta: Buenos Aires → Mendoza (1,100 km)
+- Chofer asignado: Juan Pérez (Cluster: Equilibrado, Score: 75)
+- ETA estimado: 16:00 hrs
+- Hora real de llegada: 17:30 hrs (+90 min tarde)
+
+**¿Qué aprendemos?**
+```python
+# El sistema registra:
+trip_outcome = {
+    'trip_id': 'trip_12345',
+    'driver_id': 'juan_perez',
+    'route_id': 'BA-Mendoza',
+    'driver_cluster': 1,  # Equilibrado
+    'driver_score': 75,
+    'route_score': 68,
+    'match_score': 82,
+    'eta_difference_minutes': 90,  # TARDE
+    'on_time_delivery': False,
+    'had_incident': False,
+    'fuel_efficiency_delta': +5,  # Gastó 5L más de lo esperado
+}
+
+# Análisis ML:
+# - Ruta BA-Mendoza con chofer Cluster 1 (Equilibrado) → Alto riesgo de delay
+# - Pattern detectado: Choferes Cluster 1 + rutas >1000km → +60 min promedio
+# - Acción futura: Recomendar solo choferes Cluster 0 (Conservadores) para esta ruta
+# - O ajustar ETA: +45 min si se asigna Cluster 1
+```
+
+**Mejora en Recomendaciones:**
+A partir del próximo mes, cuando alguien pida BA → Mendoza:
+- Sistema prefiere choferes Cluster 0 (Conservadores)
+- Si asigna Cluster 1, ajusta ETA automáticamente: +45 min
+- Notifica al dispatcher: "⚠️ Este chofer históricamente llega 45 min tarde en rutas largas"
+
+---
+
+### Caso 2: Aprendiendo de Incidentes
+
+**Escenario:**
+- Ruta: Rosario → Córdoba (montaña)
+- Chofer: María López (Cluster: Agresivo, Score: 65)
+- Resultado: Incidente (frenada brusca severa, casi accidente)
+
+**¿Qué aprendemos?**
+```python
+trip_outcome = {
+    'driver_id': 'maria_lopez',
+    'route_id': 'Rosario-Cordoba',
+    'driver_cluster': 2,  # Agresivo
+    'route_peligrosity_score': 85,  # ALTA
+    'had_incident': True,
+    'incident_type': 'harsh_braking_severe',
+    'incident_severity': 'high',
+    'overall_success_score': 35  # BAJO
+}
+
+# Análisis ML:
+# - Pattern: Chofer Cluster 2 (Agresivo) + Ruta peligrosidad >80 → 65% prob. incidente
+# - Acción: BLOQUEAR asignaciones de Cluster 2 a rutas peligrosidad >70
+# - Re-entrenar: Ajustar scoring para penalizar más esta combinación
+```
+
+**Mejora en Recomendaciones:**
+- Sistema NO recomendará choferes Cluster 2 (Agresivos) para rutas peligrosas
+- Si no hay alternativa, alerta: "🚨 RIESGO ALTO: Esta combinación tiene 65% prob. de incidente"
+- Sugiere capacitación: "María López necesita entrenamiento en manejo de montaña"
+
+---
+
+### Caso 3: Aprendiendo de Eficiencia de Combustible
+
+**Escenario:**
+- Chofer: Carlos Gómez (Cluster: Conservador, Score: 90)
+- Ruta: Autopista BA → Rosario (300 km)
+- Consumo esperado: 75L
+- Consumo real: 68L (-7L, 9% ahorro)
+
+**¿Qué aprendemos?**
+```python
+trip_outcome = {
+    'driver_id': 'carlos_gomez',
+    'route_id': 'BA-Rosario',
+    'predicted_fuel': 75,
+    'actual_fuel': 68,
+    'fuel_efficiency_delta': -7,  # AHORRO
+    'overall_success_score': 95
+}
+
+# Análisis ML:
+# - Pattern: Carlos Gómez consistentemente ahorra 8-10% combustible
+# - Feature importance: cruise_control_usage=95% es clave
+# - Acción: Promover a "Best Performer" tier
+# - Usar como benchmark para entrenar otros choferes
+```
+
+**Mejora en Recomendaciones:**
+- Carlos Gómez recibe prioridad en rutas largas de autopista
+- Dashboard muestra: "💰 Este chofer ahorrará ~$3,500 en combustible en este viaje"
+- Sistema identifica features que Carlos hace bien (cruise control) y sugiere capacitación a otros
+
+---
+
+## 📊 MÉTRICAS DE ÉXITO DEL SISTEMA DE APRENDIZAJE
+
+### KPIs del Modelo Supervisado (Post-Hackathon)
+
+| Métrica | Target Mes 1 | Target Mes 3 | Target Mes 6 |
+|---------|-------------|-------------|-------------|
+| **Model Accuracy (R²)** | 0.60 | 0.75 | 0.85 |
+| **ETA Prediction MAE** | ±20 min | ±15 min | ±10 min |
+| **Incident Prediction AUC** | 0.70 | 0.80 | 0.85 |
+| **Fuel Prediction MAPE** | 8% | 5% | 3% |
+| **On-Time Delivery Rate** | 75% | 85% | 90% |
+| **Incident Rate Reduction** | -10% | -20% | -30% |
+| **Fuel Savings vs Baseline** | 5% | 12% | 18% |
+
+### Datos Necesarios para Entrenar
+
+**Mínimo Viable:**
+- 500 viajes completados (3-4 meses de operación)
+- 30+ choferes únicos
+- 50+ rutas únicas
+- Mix de outcomes (éxitos y fracasos)
+
+**Óptimo:**
+- 2,000+ viajes (12 meses)
+- 50+ choferes
+- 100+ rutas
+- Datos de clima, tráfico, eventos especiales
+
+---
+
+## 🔄 CICLO DE VIDA DEL MODELO
+
+```
+1. HACKATHON (Semana 1)
+   └─> Clustering unsupervised
+   └─> Motor de recomendación basado en reglas
+   └─> PoC funcional
+
+2. POST-HACKATHON (Mes 1-2)
+   └─> Implementar recolección de outcomes
+   └─> Dashboard de tracking de KPIs
+   └─> Acumular datos históricos
+
+3. PRIMERA ITERACIÓN ML (Mes 3)
+   └─> Entrenar primer modelo supervisado
+   └─> Validar con datos de mes 1-2
+   └─> A/B testing: ML vs reglas
+
+4. OPTIMIZACIÓN CONTINUA (Mes 4+)
+   └─> Reentrenamiento mensual
+   └─> Feature engineering avanzado
+   └─> Incorporar nuevas fuentes de datos
+
+5. MADUREZ (Año 1+)
+   └─> Modelos especializados por tipo de ruta
+   └─> Deep learning para patrones complejos
+   └─> Predicción proactiva de mantenimiento
+```
+
+---
+
 ## 🚀 ROADMAP DE IMPLEMENTACIÓN
 
 **CRÍTICO: Entrega el VIERNES 8 NOVIEMBRE 2025**
