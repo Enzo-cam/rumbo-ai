@@ -122,7 +122,7 @@ def fetch_driver_evaluation_report(
     start_date: str,
     end_date: str,
     driver_ref_list: Optional[List[str]] = None,
-    timeout: int = 60
+    timeout: int = 120
 ) -> Dict:
     """
     Fetch Driver Evaluation Report from Scania API.
