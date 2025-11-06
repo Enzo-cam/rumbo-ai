@@ -1,0 +1,158 @@
+{
+  "AnticipationScaniaDriverSupport": {
+    "type": "Unicode String",
+    "description": "Anticipation Average score in % means that FMP calculates an average score based on the vehicle's or driver's driving score for anticipation in Scania Driver Support."
+  },
+  "AverageFuelConsumption": {
+    "type": "Decimal",
+    "description": "How many litres of fuel the vehicle or driver has consumed per 100 km."
+  },
+  "AverageFuelDriveAndIdleValue": {
+    "type": "Decimal",
+    "description": "Fuel consumption while driving or idle."
+  },
+  "AverageSpeed": {
+    "type": "Decimal",
+    "description": "Average speed in km/h. It is calculated as driven distance / total engine running time (including drive, idle, and PTO)."
+  },
+  "AverageTransportWorkValue": {
+    "type": "Integer",
+    "description": "Average transport work performed during distance driven in report period."
+  },
+  "AverageWeight": {
+    "type": "Integer",
+    "description": "The average gross weight, i.e. the combined weight of the vehicle (or road train) including load, equipment, fuel, driver and passengers at a specific moment."
+  },
+  "BrakeApplications": {
+    "type": "Integer",
+    "description": "Number of times the brake pedal has been used during the report period. Only brake applications that take place more than 3 s after the previous brake application are included."
+  },
+  "BrakeApplicationsTLValue": {
+    "type": "Decimal",
+    "description": "How often the brake pedal has been used on average. The value is stated as a number of times per 100 km. Only brake applications that take place more than 3 s after the previous brake application are included."
+  },
+  "ChoiceOfGearScaniaDriverSupport": {
+    "type": "Integer",
+    "description": "How often in % the specific gears have been chosen according to Scania Driver Support."
+  },
+  "CoastingInNeutral": {
+    "type": "Integer",
+    "description": "Distance the vehicle or driver has driven while coasting without a gear engaged during the selected time period."
+  },
+  "CoastingValue": {
+    "type": "Decimal",
+    "description": "The concept Coasting (% of distance) means the percentage of the distance the vehicle was driven without any fuel injection to the engine. During this distance, the driver has driven the vehicle without touching the accelerator pedal."
+  },
+  "Distance": {
+    "type": "Integer",
+    "description": "Driven distance during the time period."
+  },
+  "DistanceWithCruiseControl": {
+    "type": "Integer",
+    "description": "Distance the vehicle has driven with the cruise control activated."
+  },
+  "DistanceWithTrailer": {
+    "type": "Integer",
+    "description": "The total distance the vehicle has driven with a trailer connected. The trailer is reported as connected if trailer lighting or brakes are active."
+  },
+  "DriverIdentification": {
+    "type": "Unicode String",
+    "description": "The driver identification is the id of a driver card. If not exist, DriverName will be used (available from API v2)"
+  },
+  "DriverName": {
+    "type": "Unicode String",
+    "description": "The driver name as stored in Fleet Management Portal."
+  },
+  "DriverRef": {
+    "type": "Unicode String",
+    "description": "Unique identity of driver within Scania Connected Services"
+  },
+  "DrivingOutsideOptimumEngineSpeedValue": {
+    "type": "Decimal",
+    "description": "Driving outside optimum engine speed band (% of engine running time) means that the vehicle's engine speed has been outside the green band on the tachometer."
+  },
+  "DrivingWithVehicleWarningValue\n(not supported)": {
+    "type": "Decimal",
+    "description": "Driving with vehicle warning (% of distance) means that the driver has driven the vehicle a certain distance even though one of the following exceptions has occurred:Serious engine fault\nBrake lining\nAlternator fault\n· High engine temperature · Driving without safety belt · Maintenance distance exceededAdBlue level low\nTyre pressure low\n· Engine coolant level lowOil pressure low\nClutch overloaded"
+  },
+  "EngineOverSpeedValue": {
+    "type": "Decimal",
+    "description": "Engine overspeed (% of engine running time) means that the vehicle or driver has driven at too high an engine speed compared with the limit value set on the portal. Default engine speeds above 1,600 rpm are regarded as engine overspeed."
+  },
+  "EngineRuntimePTO": {
+    "type": "Unicode String",
+    "description": "Engine running time with power take-off expressed as HH:MM:SS"
+  },
+  "EngineRunningTime": {
+    "type": "Unicode String",
+    "description": "Total engine running time expressed as HH:MM:SS"
+  },
+  "EngineRuntimeIdle": {
+    "type": "Unicode String",
+    "description": "Engine running time in idle mode expressed as HH:MM:SS"
+  },
+  "FuelConsumptionPerHour": {
+    "type": "Decimal",
+    "description": "Fuel consumption per hour in litre."
+  },
+  "HarshAccelerationsValue": {
+    "type": "Decimal",
+    "description": "How many harsh accelerations were made on average. The value is stated as a number of times per 100 km. The definition of harsh acceleration changes according to the vehicle speed. Only harsh accelerations that takes place more than 3 s after the previous acceleration is included."
+  },
+  "HarshBrakeApplications": {
+    "type": "Integer",
+    "description": "Number of times that a harsh brake application have occurred during the report period. A brake application is regarded as harsh if the vehicle speed falls by more than 9 km/h in less than a second. Only harsh brake applications that take place more than 3 s after the previous harsh brake application are included."
+  },
+  "HarshBrakeApplicationsTLValue": {
+    "type": "Decimal",
+    "description": "How often the brake pedal has been used on average. The value is stated as a number of times per 100 km. A brake application is regarded as harsh if the vehicle speed falls by more than 9 km/h in less than a second. Only harsh brake applications that take place more than 3 s after the previous harsh brake application are included."
+  },
+  "HillDrivingScaniaDriverSupport": {
+    "type": "Integer",
+    "description": "Hill driving Average score in % means that the portal works out an average score based on the vehicle's or driver's driving score for hill driving in Scania Driver Support."
+  },
+  "IdlingValue": {
+    "type": "Decimal",
+    "description": "Idling (% of engine running time) means that the power in the vehicle is switched on, the speed is lower than 4 km/h and no power take-offs are in use. Idling is registered if the vehicle is idling for more than 30 s."
+  },
+  "MaxEngineSpeed\n(not supported)": {
+    "type": "Integer",
+    "description": "Max engine speed indicates the highest measured engine speed during the selected time period. The maximum engine speed is calculated only when driving, not when idling or operating a power take-off. Engine speed during engine braking is not included."
+  },
+  "MaxVehicleSpeed\n(not supported)": {
+    "type": "Integer",
+    "description": "Max speed indicates the highest measured speed during the selected time period in km/h."
+  },
+  "ScaniaDriverSupportValue": {
+    "type": "Integer",
+    "description": "Average score in % means that the portal works out an average score from the 4 different categories (hill driving, anticipation, use of brakes and choice of gears) which are part of Scania Driver Support."
+  },
+  "SpeedingValue": {
+    "type": "Decimal",
+    "description": "Speeding (% of engine running time) means that the vehicle or the driver has exceeded the limit value for speeding set on the portal. NOTE: It is not considered speeding when the vehicle speedometer displays a higher speed than the limit value permissible for speeding if the driver is not depressing the accelerator pedal at the same time, e.g. when the vehicle coasts downhill."
+  },
+  "TotalFuelConsumption": {
+    "type": "Integer",
+    "description": "Total fuel consumption during report period while driving, idling and using a power take-off (litres)."
+  },
+  "TotalFuelConsumptionIdling": {
+    "type": "Integer",
+    "description": "How many litres of fuel was consumed when the vehicle was idling. The vehicle is considered to be idling if the ignition is switched on, the speed is lower than 4 km/h and no power take-offs are in use."
+  },
+  "TotalFuelConsumptionPto": {
+    "type": "Integer",
+    "description": "How many litres of fuel was consumed when the vehicle was using a power take-off. In order to register the fuel consumption when using a power take-off, the vehicle speed must be lower than 4 km/h."
+  },
+  "TransportWork": {
+    "type": "Integer",
+    "description": "The total work carried out by the vehicle expressed in the unit Tonne-kilometre or tkm."
+  },
+  "UseOfBrakesScaniaDriverSupport": {
+    "type": "Integer",
+    "description": "Use of brakes Average score in % means that the portal works out an average score based on the vehicle's or driver's driving score for use of brakes in Scania Driver Support."
+  },
+  "EvaluationVehicles": {
+    "type": "List<EvaluationVehicle>",
+    "description": "List of EvaluationVehicle"
+  }
+}

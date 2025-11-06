@@ -1,0 +1,2523 @@
+Date: Fri, 31 Oct 2025 17:35:51 +0000 (UTC)
+Message-ID: <317538583.11.1761932151972@8e5f911fdee5>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_10_1802914119.1761932151971"
+
+------=_Part_10_1802914119.1761932151971
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>[RUMBO.AI]: Sistema inteligente de scoring y recomendaci=C3=B3n =
+de conductores</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>[RUMBO.AI]: Sistema inteligente de scoring y recomendaci=C3=B3n de =
+conductores</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=
+=B3ndeconductores-=F0=9F=8F=97=EF=B8=8FArquitecturadelSistema">=F0=9F=8F=97=
+=EF=B8=8F <strong>Arquitectura del Sistema</strong></h2><span class=3D"conf=
+luence-embedded-file-wrapper image-center-wrapper confluence-embedded-manua=
+l-size"><img class=3D"confluence-embedded-image image-center" alt=3D"image-=
+20251024-132708.png" width=3D"468" loading=3D"lazy" src=3D"7b7fdbe86899236a=
+f38935e0dd0d3af75026324e37663a818c0b185f9b031605" data-image-src=3D"https:/=
+/santex.atlassian.net/wiki/download/attachments/3354558505/image-20251024-1=
+32708.png?version=3D1&amp;modificationDate=3D1761312433451&amp;cacheVersion=
+=3D1&amp;api=3Dv2" data-height=3D"2672" data-width=3D"3208" data-unresolved=
+-comment-count=3D"0" data-linked-resource-id=3D"3354755079" data-linked-res=
+ource-version=3D"1" data-linked-resource-type=3D"attachment" data-linked-re=
+source-default-alias=3D"image-20251024-132708.png" data-base-url=3D"https:/=
+/santex.atlassian.net/wiki" data-linked-resource-content-type=3D"image/png"=
+ data-linked-resource-container-id=3D"3354558505" data-linked-resource-cont=
+ainer-version=3D"5" data-media-id=3D"9119832f-10d7-4d7e-9738-c1e3894d47a6" =
+data-media-type=3D"file" height=3D"390"></span>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=8E=AFPlandeImplementaci=C3=B3nparaHackathon(2-3d=C3=ADas)">=
+=F0=9F=8E=AF <strong>Plan de Implementaci=C3=B3n para Hackathon (2-3 d=C3=
+=ADas)</strong></h2>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-D=C3=ADa1:CoreInfrastructure"><strong>D=C3=ADa 1: Core Infrastruct=
+ure</strong></h3>
+<ul>
+<li>
+<p>=E2=9C=85 Crear tablas de base de datos</p></li>
+<li>
+<p>=E2=9C=85 Implementar servicios base en NestJS</p></li>
+<li>
+<p>=E2=9C=85 Integraci=C3=B3n b=C3=A1sica con Scania API</p></li>
+<li>
+<p>=E2=9C=85 Endpoint para capturar telemetr=C3=ADa cada 10 min</p></li>
+</ul>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-D=C3=ADa2:MLModels"><strong>D=C3=ADa 2: ML Models</strong></h3>
+<ul>
+<li>
+<p>=E2=9C=85 Entrenar modelo de anomal=C3=ADas con datos sint=C3=A9ticos/hi=
+st=C3=B3ricos</p></li>
+<li>
+<p>=E2=9C=85 Implementar scoring engine</p></li>
+<li>
+<p>=E2=9C=85 API en FastAPI/Flask para servir modelos</p></li>
+<li>
+<p>=E2=9C=85 Integraci=C3=B3n NestJS &lt;-&gt; ML API</p></li>
+</ul>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-D=C3=ADa3:RecommendationEngine+Demo"><strong>D=C3=ADa 3: Recommend=
+ation Engine + Demo</strong></h3>
+<ul>
+<li>
+<p>=E2=9C=85 Implementar recomendador de conductores</p></li>
+<li>
+<p>=E2=9C=85 Dashboard frontend b=C3=A1sico (ranking + recomendaciones)</p>=
+</li>
+<li>
+<p>=E2=9C=85 Casos de demo preparados</p></li>
+<li>
+<p>=E2=9C=85 Presentaci=C3=B3n y m=C3=A9tricas</p></li>
+</ul>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=92=A1ValorparaelCliente-ROIEstimado">=F0=9F=92=A1 <strong>V=
+alor para el Cliente - ROI Estimado</strong></h2>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"d2=
+12e069-6554-42c5-b557-2d81eeba7ca9" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>M=C3=A9trica</p></th>
+<th class=3D"confluenceTh">
+<p>Impacto Estimado</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Reducci=C3=B3n de incidentes</strong></p></td>
+<td class=3D"confluenceTd">
+<p>25-30%</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Mejora en asignaciones</strong></p></td>
+<td class=3D"confluenceTd">
+<p>40% m=C3=A1s eficientes</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Ahorro en seguros</strong></p></td>
+<td class=3D"confluenceTd">
+<p>~15% por mejora en safety</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Reducci=C3=B3n combustible</strong></p></td>
+<td class=3D"confluenceTd">
+<p>8-12% (mejores conductores)</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Satisfacci=C3=B3n cliente</strong></p></td>
+<td class=3D"confluenceTd">
+<p>+20% (menos delays)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=8E=ACFlujodeUsodelSistema:HistoriadeUsuario">=F0=9F=8E=AC <=
+strong>Flujo de Uso del Sistema: Historia de Usuario</strong></h1>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=93=96NarrativaCompletadelSistema">=F0=9F=93=96 <strong>Narr=
+ativa Completa del Sistema</strong></h2>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-1.=F0=9F=9A=97EscenarioInicial:ElConductorenRuta"><strong>1. =F0=
+=9F=9A=97 Escenario Inicial: El Conductor en Ruta</strong></h2>
+<p><strong>Protagonista:</strong> Juan P=C3=A9rez, conductor de cami=C3=B3n=
+ con 3 a=C3=B1os de experiencia</p>
+<p><strong>Situaci=C3=B3n:</strong><br>
+Juan sale del terminal de Buenos Aires con destino a Mendoza, transportando=
+ 15 toneladas de carga general. El sistema ya tiene configurado su <strong>=
+Roadmap (ERoadmap)</strong> con:</p>
+<ul>
+<li>
+<p>Ruta planificada con OSRM</p></li>
+<li>
+<p>ETAs calculados para cada punto</p></li>
+<li>
+<p>Paradas autorizadas</p></li>
+<li>
+<p>Velocidades esperadas por tramo</p></li>
+</ul>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-Cada10minutosautom=C3=A1ticamente:"><strong>Cada 10 minutos autom=
+=C3=A1ticamente:</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=F0=9F=
+=95=90 10:00 AM - Sistema recibe telemetr=C3=ADa de Scania:
+  =E2=94=9C=E2=94=80 Posici=C3=B3n GPS: -34.5678, -58.1234
+  =E2=94=9C=E2=94=80 Velocidad actual: 85 km/h (dentro de l=C3=ADmite)
+  =E2=94=9C=E2=94=80 Combustible: consumo normal
+  =E2=94=9C=E2=94=80 RPM motor: 1800 (normal)
+  =E2=94=94=E2=94=80 =E2=9C=85 Todo normal - No anomal=C3=ADas
+
+=F0=9F=95=90 10:10 AM - Nueva telemetr=C3=ADa:
+  =E2=94=9C=E2=94=80 Velocidad: 95 km/h =E2=9A=A0=EF=B8=8F (excede l=C3=ADm=
+ite en 15 km/h)
+  =E2=94=9C=E2=94=80 2 frenadas bruscas detectadas
+  =E2=94=9C=E2=94=80 Desviaci=C3=B3n de ruta: 500 metros
+  =E2=94=94=E2=94=80 =F0=9F=9A=A8 ANOMAL=C3=8DA DETECTADA
+ =20
+      =E2=94=8C=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=90
+      =E2=94=82 Sistema de IA analiza en tiempo real=E2=94=82
+      =E2=94=94=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=98
+           =E2=86=93
+      Modelo de Isolation Forest clasifica:
+      - Tipo: "Conducci=C3=B3n agresiva"
+      - Severidad: 72/100 (Alta)
+      - Contexto: Zona urbana (m=C3=A1s riesgoso)</pre>
+</div>
+</div>
+<p><strong>=C2=BFQu=C3=A9 sucede autom=C3=A1ticamente?</strong></p>
+<ol start=3D"1">
+<li>
+<p><strong>Se crea registro en la tabla </strong><code>driving_anomalies</c=
+ode>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Driver:=
+ Juan P=C3=A9rez
+Tipo: Conducci=C3=B3n agresiva + Desviaci=C3=B3n de ruta
+Severidad: 72/100
+Ubicaci=C3=B3n: Coordenadas exactas
+Timestamp: 10:10 AM</pre>
+</div>
+</div></li>
+<li>
+<p><strong>Se env=C3=ADa alerta al supervisor v=C3=ADa WebSocket:</strong><=
+/p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=F0=9F=
+=94=B4 ALERTA: Juan P=C3=A9rez (Unidad #342)
+Conducci=C3=B3n irregular detectada
+Ubicaci=C3=B3n: [Ver mapa]
+Acciones sugeridas: [Contactar conductor]</pre>
+</div>
+</div></li>
+<li>
+<p><strong>Se impacta el score del conductor en tiempo real:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Safety =
+Score de Juan:
+Antes: 88/100
+Despu=C3=A9s: 85/100 (-3 puntos)</pre>
+</div>
+</div></li>
+</ol>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-2.=F0=9F=93=8AAlFinalizarelViaje:C=C3=A1lculodeScoreCompleto"><str=
+ong>2. =F0=9F=93=8A Al Finalizar el Viaje: C=C3=A1lculo de Score Completo</=
+strong></h2>
+<p><strong>Juan llega a Mendoza. El sistema autom=C3=A1ticamente:</strong><=
+/p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=F0=9F=
+=8E=AF CALCULANDO SCORE DEL VIAJE...
+
+1=EF=B8=8F=E2=83=A3 Safety Score (peso 40%):
+   =E2=9C=85 0 accidentes
+   =E2=9A=A0=EF=B8=8F 3 frenadas bruscas =E2=86=92 -6 puntos
+   =E2=9A=A0=EF=B8=8F 2 excesos de velocidad =E2=86=92 -10 puntos
+   =E2=9C=85 Descansos reglamentarios cumplidos
+  =20
+   Resultado: 84/100
+
+2=EF=B8=8F=E2=83=A3 Efficiency Score (peso 25%):
+   =E2=9C=85 Consumo de combustible: 5% mejor que promedio =E2=86=92 +5 pun=
+tos
+   =E2=9A=A0=EF=B8=8F Tiempo en ralent=C3=AD: 15 min extra =E2=86=92 -3 pun=
+tos
+  =20
+   Resultado: 87/100
+
+3=EF=B8=8F=E2=83=A3 Compliance Score (peso 25%):
+   =E2=9A=A0=EF=B8=8F Lleg=C3=B3 25 min tarde al ETA calculado =E2=86=92 -8=
+ puntos
+   =E2=9A=A0=EF=B8=8F 1 desviaci=C3=B3n no autorizada =E2=86=92 -5 puntos
+   =E2=9C=85 Todas las paradas en lugares correctos
+  =20
+   Resultado: 82/100
+
+4=EF=B8=8F=E2=83=A3 Reliability Score (peso 10%):
+   =E2=9C=85 Carga entregada completa
+   =E2=9C=85 Documentaci=C3=B3n en orden
+  =20
+   Resultado: 95/100
+
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90
+SCORE GENERAL DEL VIAJE: 85.25/100
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90</pre>
+</div>
+</div>
+<p><strong>Este score se guarda en </strong><code>driver_behavior_scores</c=
+ode> y actualiza:</p>
+<ul>
+<li>
+<p>Promedio hist=C3=B3rico de Juan</p></li>
+<li>
+<p>Ranking global de conductores</p></li>
+<li>
+<p>Estad=C3=ADsticas para futuras recomendaciones</p></li>
+</ul>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-3.=F0=9F=8F=86VistadelSupervisor:DashboarddeConductores"><strong>3=
+. =F0=9F=8F=86 Vista del Supervisor: Dashboard de Conductores</strong></h2>
+<p><strong>Protagonista:</strong> Mar=C3=ADa Gonz=C3=A1lez, supervisora de =
+flota</p>
+<p><strong>Cada ma=C3=B1ana, Mar=C3=ADa abre el dashboard y ve:</strong></p=
+>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=E2=95=
+=94=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=97
+=E2=95=91         =F0=9F=8F=86 RANKING DE CONDUCTORES - =C3=9ALTIMOS 30 D=
+=C3=8DAS     =E2=95=91
+=E2=95=A0=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=A3
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  1. =F0=9F=A5=87 Laura Mart=C3=ADnez    Score: 94/100            =
+      =E2=95=91
+=E2=95=91     =E2=94=9C=E2=94=80 Safety: 96  =E2=94=9C=E2=94=80 Efficiency:=
+ 93  =E2=94=9C=E2=94=80 Compliance: 95=E2=95=91
+=E2=95=91     =E2=94=94=E2=94=80 15 viajes completados, 0 incidentes       =
+       =E2=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  2. =F0=9F=A5=88 Pedro Rodr=C3=ADguez   Score: 91/100            =
+      =E2=95=91
+=E2=95=91     =E2=94=9C=E2=94=80 Safety: 94  =E2=94=9C=E2=94=80 Efficiency:=
+ 89  =E2=94=9C=E2=94=80 Compliance: 90=E2=95=91
+=E2=95=91     =E2=94=94=E2=94=80 12 viajes completados, 1 incidente menor  =
+       =E2=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  3. =F0=9F=A5=89 Ana Silva         Score: 88/100                 =
+ =E2=95=91
+=E2=95=91     =E2=94=94=E2=94=80 Especializada en cargas peligrosas        =
+       =E2=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  ...                                                     =E2=95=
+=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  8. =E2=9A=A0=EF=B8=8F Juan P=C3=A9rez        Score: 85/100 (=E2=
+=86=933)            =E2=95=91
+=E2=95=91     =E2=94=94=E2=94=80 3 anomal=C3=ADas en =C3=BAltima semana    =
+                 =E2=95=91
+=E2=95=91         [Ver detalles] [Programar capacitaci=C3=B3n]         =E2=
+=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=9A=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=9D</pre>
+</div>
+</div>
+<p><strong>Mar=C3=ADa hace click en Juan para ver detalles:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=F0=9F=
+=91=A4 PERFIL DETALLADO: Juan P=C3=A9rez
+
+=F0=9F=93=8A Evoluci=C3=B3n de Score (=C3=BAltimos 6 meses):
+   =20
+    95 =E2=94=9C=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=95=AE     =
+              =20
+    90 =E2=94=82      =E2=95=B2                  =20
+    85 =E2=94=82       =E2=95=B2      =E2=95=B1=E2=94=80=E2=94=80=E2=94=80=
+=E2=95=AE       =E2=86=90 Estamos aqu=C3=AD
+    80 =E2=94=82        =E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=95=
+=AF    =E2=94=82      =20
+    75 =E2=94=82                  =E2=95=B0=E2=94=80=E2=94=80=E2=94=80   =
+=20
+       =E2=94=94=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80
+       Ene Feb Mar Abr May Jun
+
+=F0=9F=9A=A8 Anomal=C3=ADas Recientes (=C3=BAltima semana):
+   =E2=80=A2 24/10 10:10 - Conducci=C3=B3n agresiva (Severidad: 72)
+   =E2=80=A2 23/10 15:30 - Exceso de velocidad (Severidad: 45)
+   =E2=80=A2 22/10 08:20 - Desviaci=C3=B3n de ruta (Severidad: 38)
+
+=F0=9F=92=A1 Recomendaciones del Sistema:
+   =E2=9C=93 Programar capacitaci=C3=B3n en conducci=C3=B3n segura
+   =E2=9C=93 Asignar temporalmente a rutas de menor riesgo
+   =E2=9C=93 Seguimiento m=C3=A1s frecuente pr=C3=B3ximos 30 d=C3=ADas</pre=
+>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-4.=F0=9F=8E=AFCasodeUsoPrincipal:NuevaSolicituddeViaje"><strong>4.=
+ =F0=9F=8E=AF Caso de Uso Principal: Nueva Solicitud de Viaje</strong></h2>
+<p><strong>Protagonista:</strong> Roberto, dispatcher/planificador de opera=
+ciones</p>
+<p><strong>Situaci=C3=B3n:</strong> Llega una solicitud urgente</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=F0=9F=
+=93=8B NUEVA SOLICITUD DE VIAJE
+=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=
+=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=
+=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=
+=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=
+=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=
+=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81
+
+Cliente: Minera Los Andes
+Origen: Terminal Rosario
+Destino: Mina San Juan (zona monta=C3=B1osa)
+Distancia: 1,250 km
+Tipo de carga: =E2=9A=A0=EF=B8=8F EXPLOSIVOS (Clase 1.1)
+Valor estimado: USD 150,000
+Urgencia: Alta (debe salir en 2 horas)
+
+=E2=9A=A0=EF=B8=8F Consideraciones especiales:
+   =E2=80=A2 Requiere certificaci=C3=B3n para cargas peligrosas
+   =E2=80=A2 Ruta de alto riesgo (monta=C3=B1a, curvas cerradas)
+   =E2=80=A2 Clima pronosticado: Lluvia en la cordillera
+   =E2=80=A2 Historial de la ruta: 3 incidentes en =C3=BAltimo a=C3=B1o</pr=
+e>
+</div>
+</div>
+<p><strong>Roberto hace click en: "Recomendar Conductor" =F0=9F=A4=96</stro=
+ng></p>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-ElSistematrabajaensegundoplano:"><strong>El Sistema trabaja en seg=
+undo plano:</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=F0=9F=
+=94=84 ANALIZANDO SOLICITUD...
+
+Step 1: An=C3=A1lisis de Ruta
+   =E2=94=9C=E2=94=80 Cargando historial Rosario =E2=86=92 San Juan
+   =E2=94=9C=E2=94=80 Risk Score calculado: 78/100 (Alto riesgo)
+   =E2=94=9C=E2=94=80 Factores de riesgo:
+   =E2=94=82   =E2=80=A2 Condici=C3=B3n de camino: Monta=C3=B1a + lluvia
+   =E2=94=82   =E2=80=A2 Distancia: &gt;1000 km (viaje largo)
+   =E2=94=82   =E2=80=A2 Carga peligrosa: Requiere m=C3=A1xima precauci=C3=
+=B3n
+   =E2=94=94=E2=94=80 M=C3=ADnimo requerido: Safety Score &gt; 90
+
+Step 2: B=C3=BAsqueda de Conductores Disponibles
+   =E2=94=9C=E2=94=80 Encontrados: 8 conductores disponibles
+   =E2=94=9C=E2=94=80 Filtro 1: Certificaci=C3=B3n explosivos =E2=86=92 4 c=
+onductores
+   =E2=94=9C=E2=94=80 Filtro 2: Disponibilidad horaria =E2=86=92 3 conducto=
+res
+   =E2=94=94=E2=94=80 Conductores candidatos: Laura, Ana, Pedro
+
+Step 3: Modelo de IA Eval=C3=BAa Compatibilidad
+   =E2=94=9C=E2=94=80 Features considerados:
+   =E2=94=82   =E2=80=A2 Scores hist=C3=B3ricos
+   =E2=94=82   =E2=80=A2 Experiencia en rutas similares
+   =E2=94=82   =E2=80=A2 Performance en condiciones adversas
+   =E2=94=82   =E2=80=A2 Especializaci=C3=B3n en carga peligrosa
+   =E2=94=82   =E2=80=A2 Descanso reciente (fatiga)
+   =E2=94=94=E2=94=80 Calculando predictions...
+
+=E2=9C=A8 AN=C3=81LISIS COMPLETO EN 2.3 SEGUNDOS</pre>
+</div>
+</div>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-Robertorecibelasrecomendaciones:"><strong>Roberto recibe las recom=
+endaciones:</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=E2=95=
+=94=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=97
+=E2=95=91        =F0=9F=8E=AF TOP 3 CONDUCTORES RECOMENDADOS               =
+    =E2=95=91
+=E2=95=A0=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=A3
+=E2=95=91                                                            =E2=95=
+=91
+=E2=95=91  1. =F0=9F=8C=9F Ana Silva - COMPATIBILIDAD: 96%                 =
+   =E2=95=91
+=E2=95=91     =E2=94=8C=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=90  =E2=95=91
+=E2=95=91     =E2=94=82 Score General: 88/100                            =
+=E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82 =E2=94=9C=E2=94=80 Safety: 95 =E2=AD=90 (Top 5%)   =
+                     =E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82 =E2=94=9C=E2=94=80 Experiencia: 7 a=C3=B1os        =
+                  =E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82 =E2=94=94=E2=94=80 Especializaci=C3=B3n: Cargas pel=
+igrosas           =E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82                                                   =
+=E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82 =F0=9F=92=A1 Por qu=C3=A9 es la mejor opci=C3=B3n: =
+                  =E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82  =E2=9C=93 12 viajes previos con explosivos (0 inci=
+dentes)=E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82  =E2=9C=93 Certificaci=C3=B3n vigente Clase 1.1    =
+          =E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82  =E2=9C=93 Excelente record en rutas de monta=C3=B1=
+a         =E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82  =E2=9C=93 Performance superior en clima adverso   =
+     =E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82  =E2=9C=93 =C3=9Altima vez asignada: hace 3 d=C3=AD=
+as (descansada)=E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82                                                   =
+=E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82 =E2=9A=A0=EF=B8=8F Consideraci=C3=B3n:             =
+                    =E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82  =E2=80=A2 Tarifa premium (+15%) - Justificado por =
+     =E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=82    alto valor de carga y criticidad              =
+=E2=94=82  =E2=95=91
+=E2=95=91     =E2=94=94=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=98  =E2=95=91
+=E2=95=91         [=E2=9C=85 ASIGNAR A ANA] [Ver perfil completo]          =
+=E2=95=91
+=E2=95=91                                                            =E2=95=
+=91
+=E2=95=91  =E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=95=91
+=E2=95=91                                                            =E2=95=
+=91
+=E2=95=91  2. =E2=AD=90 Laura Mart=C3=ADnez - COMPATIBILIDAD: 91%          =
+     =E2=95=91
+=E2=95=91     Score: 94/100 | Safety: 96                            =E2=95=
+=91
+=E2=95=91     =F0=9F=92=A1 Excelente opci=C3=B3n, pero menos experiencia   =
+        =E2=95=91
+=E2=95=91        en cargas peligrosas (solo 3 viajes previos)       =E2=95=
+=91
+=E2=95=91     [Asignar] [Comparar con Ana]                          =E2=95=
+=91
+=E2=95=91                                                            =E2=95=
+=91
+=E2=95=91  3. =E2=AD=90 Pedro Rodr=C3=ADguez - COMPATIBILIDAD: 87%         =
+     =E2=95=91
+=E2=95=91     Score: 91/100 | Safety: 94                            =E2=95=
+=91
+=E2=95=91     =F0=9F=92=A1 Buena opci=C3=B3n, pero =C3=BAltimo viaje fue ay=
+er           =E2=95=91
+=E2=95=91        (posible fatiga para ruta larga)                   =E2=95=
+=91
+=E2=95=91     [Asignar] [Ver disponibilidad]                        =E2=95=
+=91
+=E2=95=91                                                            =E2=95=
+=91
+=E2=95=9A=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=9D</pre>
+</div>
+</div>
+<p><strong>Roberto analiza y decide: "Asignar a Ana" =E2=9C=85</strong></p>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-5.=F0=9F=94=84MonitoreoDuranteelViaje"><strong>5. =F0=9F=94=84 Mon=
+itoreo Durante el Viaje</strong></h2>
+<p><strong>Ana est=C3=A1 en ruta con los explosivos:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=F0=9F=
+=93=8D SEGUIMIENTO EN VIVO - Unidad #234 (Ana Silva)
+
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90
+
+=F0=9F=9A=9B ESTADO ACTUAL:
+   Posici=C3=B3n: Km 450 de 1,250
+   ETA: 18:30 hs (On time =E2=9C=85)
+   Velocidad: 75 km/h (dentro de l=C3=ADmite)
+  =20
+=F0=9F=8E=AF COMPORTAMIENTO DEL CONDUCTOR:
+   =E2=94=8C=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=90
+   =E2=94=82  =C3=9Altimas 2 horas de telemetr=C3=ADa:     =E2=94=82
+   =E2=94=82  =E2=9C=85 0 anomal=C3=ADas detectadas          =E2=94=82
+   =E2=94=82  =E2=9C=85 Velocidad constante y segura    =E2=94=82
+   =E2=94=82  =E2=9C=85 Adherencia perfecta a ruta      =E2=94=82
+   =E2=94=82  =E2=9C=85 Paradas en lugares autorizados  =E2=94=82
+   =E2=94=82                                     =E2=94=82
+   =E2=94=82  Score del viaje (hasta ahora):    =E2=94=82
+   =E2=94=82  =E2=AD=90 98/100 - EXCEPCIONAL            =E2=94=82
+   =E2=94=94=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=98
+
+=F0=9F=93=8A COMPARACI=C3=93N CON PREDICCI=C3=93N DE IA:
+   =C3=89xito predicho: 96%
+   =C3=89xito actual: 98% =E2=9C=85
+  =20
+   =E2=86=92 El modelo acert=C3=B3 en la recomendaci=C3=B3n
+
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90</pre>
+</div>
+</div>
+<p><strong>Supervisor recibe notificaci=C3=B3n cada hora:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=E2=9C=
+=85 Ana Silva - Progreso normal
+   Sin incidentes | ETA mantiene | Comportamiento =C3=B3ptimo</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-6.=E2=9C=85CierredelCiclo:Retroalimentaci=C3=B3nalSistema"><strong=
+>6. =E2=9C=85 Cierre del Ciclo: Retroalimentaci=C3=B3n al Sistema</strong><=
+/h2>
+<p><strong>Ana completa el viaje exitosamente:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=F0=9F=
+=8E=89 VIAJE COMPLETADO CON =C3=89XITO
+
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90
+
+=F0=9F=91=A4 Conductor: Ana Silva
+=F0=9F=93=A6 Carga: Explosivos - Entregada intacta =E2=9C=85
+=E2=8F=B1=EF=B8=8F  Tiempo: Lleg=C3=B3 10 min antes del ETA =E2=9C=85
+=F0=9F=93=8A Score del viaje: 97/100
+
+DESGLOSE DEL SCORE:
+=E2=94=9C=E2=94=80 Safety: 98/100 (0 anomal=C3=ADas en 1,250 km)
+=E2=94=9C=E2=94=80 Efficiency: 95/100 (Consumo =C3=B3ptimo de combustible)
+=E2=94=9C=E2=94=80 Compliance: 98/100 (Adelantada al ETA)
+=E2=94=94=E2=94=80 Reliability: 100/100 (Entrega perfecta)
+
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90
+
+=F0=9F=93=88 IMPACTO EN EL SISTEMA:
+
+1=EF=B8=8F=E2=83=A3 Score de Ana actualizado:
+   Antes: 88/100 =E2=86=92 Despu=C3=A9s: 88.5/100 =E2=AC=86=EF=B8=8F
+   Sube al puesto #3 en el ranking general
+
+2=EF=B8=8F=E2=83=A3 Modelo de IA aprende:
+   =E2=9C=93 Viaje exitoso confirma la predicci=C3=B3n (96% =E2=86=92 97%)
+   =E2=9C=93 Patr=C3=B3n guardado: "Ana + Rutas monta=C3=B1a + Explosivos =
+=3D =C3=89xito"
+   =E2=9C=93 Confianza del modelo aumenta para futuras recomendaciones
+
+3=EF=B8=8F=E2=83=A3 Perfil de riesgo de ruta actualizado:
+   =E2=9C=93 Ruta Rosario-San Juan: 1 viaje exitoso m=C3=A1s registrado
+   =E2=9C=93 Risk score ajustado: 78 =E2=86=92 77 (mejora marginal)
+
+4=EF=B8=8F=E2=83=A3 M=C3=A9tricas del cliente:
+   =E2=9C=93 Minera Los Andes: Satisfacci=C3=B3n 100%
+   =E2=9C=93 Probabilidad de repetir negocio: Alta
+
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-7.=F0=9F=93=8AReportesMensuales:ValorparalaGerencia"><strong>7. =
+=F0=9F=93=8A Reportes Mensuales: Valor para la Gerencia</strong></h2>
+<p><strong>CEO de la empresa log=C3=ADstica recibe reporte:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=E2=95=
+=94=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=97
+=E2=95=91     =F0=9F=93=8A REPORTE MENSUAL - SISTEMA DE SCORING IA         =
+ =E2=95=91
+=E2=95=91              Octubre 2025                                =E2=95=
+=91
+=E2=95=A0=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=A3
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  =F0=9F=8E=AF M=C3=89TRICAS DE IMPACTO:                          =
+      =E2=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  Reducci=C3=B3n de Incidentes:                               =E2=
+=95=91
+=E2=95=91  =E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=
+=E2=96=93=E2=96=91=E2=96=91 -28% vs mes anterior                        =E2=
+=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  Satisfacci=C3=B3n de Clientes:                              =E2=
+=95=91
+=E2=95=91  =E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=
+=E2=96=93=E2=96=93=E2=96=91 +22% (Net Promoter Score)                   =E2=
+=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  Ahorro en Combustible:                                 =E2=95=91
+=E2=95=91  =E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=91=
+=E2=96=91=E2=96=91=E2=96=91 -11% por mejores conductores                =E2=
+=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  Adherencia a ETAs:                                     =E2=95=91
+=E2=95=91  =E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=
+=E2=96=93=E2=96=93=E2=96=93 94% on-time (vs 78% anterior)               =E2=
+=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  =E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  =F0=9F=92=B0 IMPACTO FINANCIERO ESTIMADO:                       =
+ =E2=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  Ahorros directos:         USD 45,000/mes               =E2=95=91
+=E2=95=91  =E2=94=9C=E2=94=80 Reducci=C3=B3n de siniestros: $28,000        =
+            =E2=95=91
+=E2=95=91  =E2=94=9C=E2=94=80 Ahorro combustible:      $12,000             =
+       =E2=95=91
+=E2=95=91  =E2=94=94=E2=94=80 Menos horas extra:       $5,000              =
+       =E2=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  Ingresos adicionales:     USD 35,000/mes               =E2=95=91
+=E2=95=91  =E2=94=94=E2=94=80 Nuevos contratos por mejor reputaci=C3=B3n   =
+            =E2=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  =E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90   =E2=95=91
+=E2=95=91  ROI del sistema: 380% en primer mes                    =E2=95=91
+=E2=95=91  =E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90   =E2=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  =F0=9F=8F=86 TOP INSIGHTS DE LA IA:                             =
+ =E2=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  =E2=80=A2 Conductores con score &gt;90 tienen 85% menos         =
+  =E2=95=91
+=E2=95=91    probabilidad de incidentes en rutas de alto riesgo   =E2=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  =E2=80=A2 Asignaciones basadas en IA mejoran 40% la            =
+=E2=95=91
+=E2=95=91    eficiencia vs asignaci=C3=B3n manual tradicional          =E2=
+=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=91  =E2=80=A2 Detecci=C3=B3n temprana de anomal=C3=ADas previno 3   =
+         =E2=95=91
+=E2=95=91    accidentes potenciales este mes                      =E2=95=91
+=E2=95=91                                                          =E2=95=
+=91
+=E2=95=9A=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=9D</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=8E=ACResumendelFlujoCompleto"><strong>=F0=9F=8E=AC Resumen =
+del Flujo Completo</strong></h2>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=E2=94=
+=8C=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=90
+=E2=94=82                    CICLO DE VIDA DEL SISTEMA                =E2=
+=94=82
+=E2=94=94=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=98
+
+1. MONITOREO CONTINUO (cada 10 min)
+   =F0=9F=93=A1 Scania API =E2=86=92 Telemetr=C3=ADa =E2=86=92 Detector de =
+Anomal=C3=ADas IA
+   =E2=94=94=E2=94=80 Si anomal=C3=ADa =E2=86=92 Alerta + Impacta score
+
+2. POST-VIAJE
+   =F0=9F=93=8A C=C3=A1lculo autom=C3=A1tico de scores completos
+   =E2=94=94=E2=94=80 Actualizaci=C3=B3n de ranking
+
+3. NUEVA SOLICITUD DE VIAJE
+   =F0=9F=A4=96 Sistema analiza y recomienda mejores conductores
+   =E2=94=94=E2=94=80 Dispatcher toma decisi=C3=B3n informada
+
+4. SEGUIMIENTO EN RUTA
+   =F0=9F=91=81=EF=B8=8F Monitoreo en tiempo real del comportamiento
+   =E2=94=94=E2=94=80 Validaci=C3=B3n de predicciones de IA
+
+5. CIERRE Y APRENDIZAJE
+   =F0=9F=94=84 Sistema aprende del resultado
+   =E2=94=94=E2=94=80 Mejora continua del modelo
+
+6. REPORTING
+   =F0=9F=93=88 M=C3=A9tricas de impacto para gerencia
+   =E2=94=94=E2=94=80 Justificaci=C3=B3n de ROI</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=92=A1CasosdeUsoSecundarios"><strong>=F0=9F=92=A1 Casos de U=
+so Secundarios</strong></h2>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-A)Capacitaci=C3=B3nDirigida"><strong>A) Capacitaci=C3=B3n Dirigida=
+</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Sistema=
+ detecta que 3 conductores tienen scores bajos en "Efficiency"
+=E2=86=92 RR.HH. programa capacitaci=C3=B3n espec=C3=ADfica en conducci=C3=
+=B3n eficiente
+=E2=86=92 Mes siguiente: scores mejoran 15%</pre>
+</div>
+</div>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-B)Prevenci=C3=B3nProactiva"><strong>B) Prevenci=C3=B3n Proactiva</=
+strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Pedro t=
+iene 5 anomal=C3=ADas en =C3=BAltima semana (vs su promedio de 1)
+=E2=86=92 Sistema alerta: "Posible fatiga o problema personal"
+=E2=86=92 Supervisor interviene antes de que ocurra un accidente</pre>
+</div>
+</div>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-C)IncentivosBasadosenDatos"><strong>C) Incentivos Basados en Datos=
+</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Laura m=
+antiene score &gt;93 por 6 meses consecutivos
+=E2=86=92 Sistema sugiere: "Candidata a bonus de performance"
+=E2=86=92 Motivaci=C3=B3n aumenta + Retenci=C3=B3n de talent</pre>
+</div>
+</div>
+<h1 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=94=8DAn=C3=A1lisisdeDatosdeScaniaAPI-Clasificaci=C3=B3nporI=
+mportancia">=F0=9F=94=8D <strong>An=C3=A1lisis de Datos de Scania API - Cla=
+sificaci=C3=B3n por Importancia</strong></h1>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=93=8AEstructuradelaResponse">=F0=9F=93=8A <strong>Estructur=
+a de la Response</strong></h2>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">interfa=
+ce ScaniaVehicleStatus {
+  // Metadata
+  vin: string;
+  triggerType: { triggerType: "TIMER" | "EVENT", context: "RFMS" };
+  createdDateTime: string;
+  receivedDateTime: string;
+ =20
+  // Datos acumulados hist=C3=B3ricos
+  accumulatedData: AccumulatedData;
+ =20
+  // Snapshot instant=C3=A1neo
+  snapshotData: SnapshotData;
+ =20
+  // Estado del veh=C3=ADculo
+  uptimeData: UptimeData;
+}</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=8E=AFCLASIFICACI=C3=93NPORCRITICIDAD">=F0=9F=8E=AF <strong>=
+CLASIFICACI=C3=93N POR CRITICIDAD</strong></h2>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=94=B4CR=C3=8DTICOS-ParaScoringdeConductores"><strong>=F0=9F=
+=94=B4 CR=C3=8DTICOS - Para Scoring de Conductores</strong></h3>
+<p>Estos datos son <strong>ESENCIALES</strong> para el sistema de IA:</p>
+<h4 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-1.DatosdeConducci=C3=B3nAgresiva(SafetyScore)"><strong>1. Datos de=
+ Conducci=C3=B3n Agresiva (Safety Score)</strong></h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// =E2=
+=AD=90=E2=AD=90=E2=AD=90=E2=AD=90=E2=AD=90 MUY IMPORTANTE
+"accelerationClass": [...]  // Aceleraciones/frenadas bruscas
+"highAccelerationClass": [...] // Aceleraciones extremas (&gt;1.1 m/s=C2=B2=
+)
+"accelerationDuringBrakeClass": [...] // Frenadas bruscas
+
+// C=C3=B3mo usarlo:
+const harshBraking =3D accelerationClass
+  .filter(item =3D&gt; item.from &lt; -0.5)  // Desaceleraci=C3=B3n &gt; 0.=
+5 m/s=C2=B2
+  .reduce((sum, item) =3D&gt; sum + item.seconds, 0);
+
+const harshAcceleration =3D accelerationClass
+  .filter(item =3D&gt; item.from &gt; 0.5)  // Aceleraci=C3=B3n &gt; 0.5 m/=
+s=C2=B2
+  .reduce((sum, item) =3D&gt; sum + item.seconds, 0);
+
+// Anomal=C3=ADa si:
+// - harshBraking &gt; 3 eventos en 10 minutos
+// - harshAcceleration &gt; 5 eventos en 10 minutos</pre>
+</div>
+</div>
+<p><strong>Por qu=C3=A9 es cr=C3=ADtico:</strong></p>
+<ul>
+<li>
+<p>Indica estilo de conducci=C3=B3n agresivo</p></li>
+<li>
+<p>Predictor #1 de accidentes</p></li>
+<li>
+<p>Desgaste de frenos/neum=C3=A1ticos</p></li>
+</ul>
+<hr>
+<h4 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-2.VelocidadyCumplimiento(ComplianceScore)"><strong>2. Velocidad y =
+Cumplimiento (Compliance Score)</strong></h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// =E2=
+=AD=90=E2=AD=90=E2=AD=90=E2=AD=90=E2=AD=90 MUY IMPORTANTE
+"vehicleSpeedClass": [...]  // Distribuci=C3=B3n de velocidades
+
+// An=C3=A1lisis de ejemplo:
+{
+  "from": 76.0, "to": 80.0, "seconds": 770489  // =E2=9C=85 BIEN: 214 horas=
+ a 76-80 km/h
+  "from": 80.0, "to": 84.0, "seconds": 168447  // =E2=9A=A0=EF=B8=8F Exceso=
+ si l=C3=ADmite es 80
+  "from": 84.0, "to": 88.0, "seconds": 790     // =F0=9F=9A=A8 ALERTA: Exce=
+so grave
+}
+
+// C=C3=A1lculo de excesos de velocidad:
+const speedingTime =3D vehicleSpeedClass
+  .filter(item =3D&gt; item.from &gt; SPEED_LIMIT)  // Ej: 80 km/h
+  .reduce((sum, item) =3D&gt; sum + item.seconds, 0);
+
+const speedingPercentage =3D (speedingTime / totalDrivingTime) * 100;</pre>
+</div>
+</div>
+<p><strong>Por qu=C3=A9 es cr=C3=ADtico:</strong></p>
+<ul>
+<li>
+<p>Compara velocidad real vs. l=C3=ADmites de ruta</p></li>
+<li>
+<p>Indicador de riesgo de accidentes</p></li>
+<li>
+<p>Infracciones/multas</p></li>
+</ul>
+<hr>
+<h4 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-3.Posici=C3=B3nGPSenTiempoReal(Compliance+Anomal=C3=ADas)"><strong=
+>3. Posici=C3=B3n GPS en Tiempo Real (Compliance + Anomal=C3=ADas)</strong>=
+</h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// =E2=
+=AD=90=E2=AD=90=E2=AD=90=E2=AD=90=E2=AD=90 MUY IMPORTANTE
+"snapshotData.gnssPosition": {
+  "latitude": -33.648083,
+  "longitude": -65.442352,
+  "heading": "275",        // Direcci=C3=B3n en grados
+  "speed": 0.0,           // Velocidad GPS
+  "positionDateTime": "2025-10-23T20:58:33"
+}
+
+// Comparar con ERoadmap planificado:
+// 1. Calcular desviaci=C3=B3n de ruta
+const deviation =3D calculateDistanceFromRoute(
+  gnssPosition,=20
+  plannedRoute
+);
+
+// Anomal=C3=ADa si:
+// - deviation &gt; 500 metros sin justificaci=C3=B3n
+// - heading opuesto a la ruta esperada</pre>
+</div>
+</div>
+<p><strong>Por qu=C3=A9 es cr=C3=ADtico:</strong></p>
+<ul>
+<li>
+<p>Detecta desv=C3=ADos de ruta no autorizados</p></li>
+<li>
+<p>Posible indicador de robo/problema</p></li>
+<li>
+<p>Base para compliance con roadmap</p></li>
+</ul>
+<hr>
+<h4 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-4.ConsumodeCombustible(EfficiencyScore)"><strong>4. Consumo de Com=
+bustible (Efficiency Score)</strong></h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// =E2=
+=AD=90=E2=AD=90=E2=AD=90=E2=AD=90 IMPORTANTE
+"engineTotalFuelUsed": 55369740,  // mililitros TOTALES
+"fuelWheelbasedSpeedOverZero": 53914570,  // ml conduciendo
+"fuelWheelbasedSpeedZero": 1409790,       // ml en ralent=C3=AD
+"fuelConsumptionDuringCruiseActive": 36369890  // ml con cruise control
+
+// C=C3=A1lculo de eficiencia:
+const totalKm =3D hrTotalVehicleDistance / 1000;  // metros a km
+const totalLitres =3D engineTotalFuelUsed / 1000000;  // ml a litros
+const avgConsumption =3D (totalLitres / totalKm) * 100;  // l/100km
+
+// Comparar con baseline de flota:
+const efficiency =3D (fleetAverage / avgConsumption) * 100;
+
+// Tambi=C3=A9n calcular consumo en ralent=C3=AD (waste):
+const idleConsumption =3D fuelWheelbasedSpeedZero / 1000000;</pre>
+</div>
+</div>
+<p><strong>Por qu=C3=A9 es cr=C3=ADtico:</strong></p>
+<ul>
+<li>
+<p>Indicador directo de conducci=C3=B3n eficiente</p></li>
+<li>
+<p>Impacto en costos operativos</p></li>
+<li>
+<p>Correlaciona con estilo de conducci=C3=B3n</p></li>
+</ul>
+<hr>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=9F=A1IMPORTANTES-DatosdeContexto"><strong>=F0=9F=9F=A1 IMPO=
+RTANTES - Datos de Contexto</strong></h3>
+<h4 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-5.TiempoenRalent=C3=AD(Efficiency)"><strong>5. Tiempo en Ralent=C3=
+=AD (Efficiency)</strong></h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// =E2=
+=AD=90=E2=AD=90=E2=AD=90 IMPORTANTE
+"durationWheelbasedSpeedZero": 2061197,  // segundos detenido (572 horas)
+
+// Calcular tiempo en ralent=C3=AD excesivo:
+const totalIdleHours =3D durationWheelbasedSpeedZero / 3600;
+const drivingHours =3D durationWheelbasedSpeedOverZero / 3600;
+const idlePercentage =3D (totalIdleHours / (totalIdleHours + drivingHours))=
+ * 100;
+
+// Anomal=C3=ADa si:
+// - idlePercentage &gt; 20% (excesivo para cami=C3=B3n de carga)
+// - Paradas largas en ubicaciones no planificadas</pre>
+</div>
+</div>
+<p><strong>Uso:</strong></p>
+<ul>
+<li>
+<p>Penalizar en efficiency score</p></li>
+<li>
+<p>Detectar paradas no autorizadas</p></li>
+<li>
+<p>Correlacionar con snapshotData.gnssPosition</p></li>
+</ul>
+<hr>
+<h4 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-6.UsodeFrenos(Safety)"><strong>6. Uso de Frenos (Safety)</strong><=
+/h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// =E2=
+=AD=90=E2=AD=90=E2=AD=90 IMPORTANTE
+"brakePedalCounterSpeedOverZero": 43515,  // Veces que fren=C3=B3 en movimi=
+ento
+"distanceBrakePedalActiveSpeedOverZero": 2320890,  // Metros frenando
+
+// C=C3=A1lculo de uso de frenos:
+const totalKm =3D hrTotalVehicleDistance / 1000;
+const brakingKm =3D distanceBrakePedalActiveSpeedOverZero / 1000;
+const brakingPercentage =3D (brakingKm / totalKm) * 100;
+const avgBrakingFrequency =3D brakePedalCounter / totalKm;  // Frenadas por=
+ km
+
+// Bueno: avgBrakingFrequency &lt; 0.5 (1 frenada cada 2 km)
+// Malo: avgBrakingFrequency &gt; 1.5 (frenadas excesivas)</pre>
+</div>
+</div>
+<p><strong>Por qu=C3=A9 es importante:</strong></p>
+<ul>
+<li>
+<p>Indicador de anticipaci=C3=B3n del conductor</p></li>
+<li>
+<p>Uso excesivo =3D conducci=C3=B3n agresiva</p></li>
+<li>
+<p>Predictor de desgaste de componentes</p></li>
+</ul>
+<hr>
+<h4 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-7.UsodePedaldeAcelerador(Safety+Efficiency)"><strong>7. Uso de Ped=
+al de Acelerador (Safety + Efficiency)</strong></h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// =E2=
+=AD=90=E2=AD=90=E2=AD=90 IMPORTANTE
+"accelerationPedalPositionClass": [
+  { "from": 0.0, "to": 20.0, "seconds": 1043267 },   // Pedal suave
+  { "from": 20.0, "to": 40.0, "seconds": 132391 },
+  { "from": 40.0, "to": 60.0, "seconds": 176786 },
+  { "from": 60.0, "to": 80.0, "seconds": 49241 },
+  { "from": 80.0, "to": 100.0, "seconds": 60816 }    // Pedal a fondo
+]
+
+// An=C3=A1lisis:
+const gentleDriving =3D accelerationPedalClass
+  .filter(item =3D&gt; item.to &lt;=3D 40)
+  .reduce((sum, item) =3D&gt; sum + item.seconds, 0);
+
+const aggressiveDriving =3D accelerationPedalClass
+  .filter(item =3D&gt; item.from &gt;=3D 60)
+  .reduce((sum, item) =3D&gt; sum + item.seconds, 0);
+
+const aggressivePercentage =3D (aggressiveDriving / totalTime) * 100;</pre>
+</div>
+</div>
+<p><strong>Por qu=C3=A9 es importante:</strong></p>
+<ul>
+<li>
+<p>Estilo de conducci=C3=B3n econ=C3=B3mica vs agresiva</p></li>
+<li>
+<p>Impacta directamente en consumo</p></li>
+<li>
+<p>Indicador de paciencia del conductor</p></li>
+</ul>
+<hr>
+<h4 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-8.CruiseControl(Efficiency+Compliance)"><strong>8. Cruise Control =
+(Efficiency + Compliance)</strong></h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// =E2=
+=AD=90=E2=AD=90=E2=AD=90 IMPORTANTE
+"distanceCruiseControlActive": 117134380,  // metros con cruise (117,134 km=
+)
+"durationCruiseControlActive": 5444025,    // segundos (1,512 horas)
+"fuelConsumptionDuringCruiseActive": 36369890  // ml
+
+// C=C3=A1lculo:
+const totalKm =3D hrTotalVehicleDistance / 1000;
+const cruiseKm =3D distanceCruiseControlActive / 1000;
+const cruiseUsagePercentage =3D (cruiseKm / totalKm) * 100;  // 62.8% en es=
+te caso
+
+// Bueno: &gt; 60% en rutas largas
+// Indicador de:
+// - Conducci=C3=B3n eficiente
+// - Adherencia a velocidad constante
+// - Profesionalismo</pre>
+</div>
+</div>
+<hr>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=9F=A2=C3=9ATILES-DatosdeMantenimiento/Estado"><strong>=F0=
+=9F=9F=A2 =C3=9ATILES - Datos de Mantenimiento/Estado</strong></h3>
+<h4 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-9.EstadodelVeh=C3=ADculo(Preventivo)"><strong>9. Estado del Veh=C3=
+=ADculo (Preventivo)</strong></h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// =E2=
+=AD=90=E2=AD=90 =C3=9ATIL
+"uptimeData.tellTaleInfo": [
+  {
+    "tellTale": "ANTI_LOCK_BRAKE_FAILURE",
+    "state": "YELLOW"  // =E2=9A=A0=EF=B8=8F ALERTA
+  },
+  {
+    "tellTale": "ENGINE_MIL_INDICATOR",
+    "state": "OFF"  // =E2=9C=85 OK
+  }
+]
+
+"serviceDistance": 6127440,  // Metros hasta pr=C3=B3ximo service
+"engineCoolantTemperature": 79.0  // =C2=B0C (normal: 75-90=C2=B0C)</pre>
+</div>
+</div>
+<p><strong>Uso:</strong></p>
+<ul>
+<li>
+<p>Alertas preventivas de mantenimiento</p></li>
+<li>
+<p>Puede afectar recomendaci=C3=B3n de conductor</p>
+<ul>
+<li>
+<p>No asignar veh=C3=ADculo con fallas a viajes cr=C3=ADticos</p></li>
+</ul></li>
+<li>
+<p>Correlacionar fallas con conducci=C3=B3n agresiva</p></li>
+</ul>
+<hr>
+<h4 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-10.DistanciayHorasTotales(Contexto)"><strong>10. Distancia y Horas=
+ Totales (Contexto)</strong></h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// =E2=
+=AD=90=E2=AD=90 =C3=9ATIL
+"hrTotalVehicleDistance": 186572560,  // metros (186,572 km TOTALES)
+"totalEngineHours": 3357.19,  // horas TOTALES
+"grossCombinationVehicleWeight": 6016  // kg peso actual
+
+// C=C3=A1lculos derivados:
+const avgSpeed =3D (totalDistance / 1000) / totalEngineHours;  // km/h prom=
+edio
+const utilizationRate =3D (totalEngineHours / vehicleAge) / 24;  // % uso d=
+el veh=C3=ADculo</pre>
+</div>
+</div>
+<p><strong>Uso:</strong></p>
+<ul>
+<li>
+<p>Contexto para normalizar m=C3=A9tricas</p></li>
+<li>
+<p>Comparar conductores en mismas condiciones</p></li>
+<li>
+<p>Identificar patrones de uso</p></li>
+</ul>
+<hr>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=E2=9A=AABAJOSPRIORIDAD-DatosT=C3=A9cnicos"><strong>=E2=9A=AA BAJO=
+S PRIORIDAD - Datos T=C3=A9cnicos</strong></h3>
+<h4 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-11.MotoryTransmisi=C3=B3n"><strong>11. Motor y Transmisi=C3=B3n</s=
+trong></h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// =E2=
+=AD=90 BAJA PRIORIDAD para hackathon
+"engineTorqueClass": [...]
+"engineSpeedClass": [...]
+"selectedGearClass": [...]
+"currentGearClass": [...]
+"retarderTorqueClass": [...]</pre>
+</div>
+</div>
+<p><strong>Cu=C3=A1ndo son =C3=BAtiles:</strong></p>
+<ul>
+<li>
+<p>An=C3=A1lisis muy detallado de eficiencia</p></li>
+<li>
+<p>Mantenimiento predictivo avanzado</p></li>
+<li>
+<p><strong>Para hackathon:</strong> IGNORAR inicialmente</p></li>
+</ul>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=8E=AFRESUMEN:Top10CamposparaelSistemadeIA">=F0=9F=8E=AF <st=
+rong>RESUMEN: Top 10 Campos para el Sistema de IA</strong></h2>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-ParaFeatureEngineeringdelModelo:"><strong>Para Feature Engineering=
+ del Modelo:</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">interfa=
+ce DriverBehaviorFeatures {
+  // 1. SAFETY SCORE (40%)
+  harshBrakingCount: number;           // De accelerationClass
+  harshAccelerationCount: number;      // De accelerationClass
+  extremeAccelerationEvents: number;   // De highAccelerationClass
+  speedingTimePercentage: number;      // De vehicleSpeedClass
+ =20
+  // 2. EFFICIENCY SCORE (25%)
+  fuelConsumptionPerKm: number;        // engineTotalFuelUsed / distance
+  idleTimePercentage: number;          // durationWheelbasedSpeedZero
+  cruiseControlUsage: number;          // distanceCruiseControlActive
+ =20
+  // 3. COMPLIANCE SCORE (25%)
+  routeDeviationMeters: number;        // Calculado con gnssPosition vs ERo=
+admap
+  unscheduledStops: number;            // Correlaci=C3=B3n GPS + velocidad =
+0
+  plannedVsActualTime: number;         // Comparar con ERoadmap ETA
+ =20
+  // 4. RELIABILITY SCORE (10%)
+  brakingFrequency: number;            // brakePedalCounter / totalKm
+  gentleDrivingPercentage: number;     // accelerationPedalPositionClass
+}</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=93=9DEjemplodeProcesamientoReal">=F0=9F=93=9D <strong>Ejemp=
+lo de Procesamiento Real</strong></h2>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// src/=
+driver-ai/services/scania-data-processor.service.ts
+
+@Injectable()
+export class ScaniaDataProcessor {
+ =20
+  processScaniaData(scaniaData: ScaniaVehicleStatus, roadmap: ERoadmap): Dr=
+iverBehaviorFeatures {
+    const features: DriverBehaviorFeatures =3D {
+      // SAFETY
+      harshBrakingCount: this.calculateHarshBraking(scaniaData.accumulatedD=
+ata.accelerationClass),
+      harshAccelerationCount: this.calculateHarshAcceleration(scaniaData.ac=
+cumulatedData.accelerationClass),
+      extremeAccelerationEvents: this.calculateExtremeEvents(scaniaData.acc=
+umulatedData.highAccelerationClass),
+      speedingTimePercentage: this.calculateSpeedingPercentage(
+        scaniaData.accumulatedData.vehicleSpeedClass,
+        roadmap.speedLimit
+      ),
+     =20
+      // EFFICIENCY
+      fuelConsumptionPerKm: this.calculateFuelEfficiency(
+        scaniaData.engineTotalFuelUsed,
+        scaniaData.hrTotalVehicleDistance
+      ),
+      idleTimePercentage: this.calculateIdlePercentage(scaniaData.accumulat=
+edData),
+      cruiseControlUsage: this.calculateCruiseUsage(scaniaData.accumulatedD=
+ata),
+     =20
+      // COMPLIANCE
+      routeDeviationMeters: this.calculateRouteDeviation(
+        scaniaData.snapshotData.gnssPosition,
+        roadmap.route
+      ),
+      unscheduledStops: this.detectUnscheduledStops(scaniaData, roadmap),
+      plannedVsActualTime: this.compareWithETA(scaniaData, roadmap),
+     =20
+      // RELIABILITY
+      brakingFrequency: this.calculateBrakingFrequency(scaniaData),
+      gentleDrivingPercentage: this.calculateGentleDriving(
+        scaniaData.accumulatedData.accelerationPedalPositionClass
+      ),
+    };
+   =20
+    return features;
+  }
+ =20
+  private calculateHarshBraking(accelerationClass: AccelerationClass[]): nu=
+mber {
+    // Contar desaceleraciones &gt; 0.5 m/s=C2=B2 (frenadas bruscas)
+    return accelerationClass
+      .filter(item =3D&gt; item.from !=3D=3D undefined &amp;&amp; item.from=
+ &lt; -0.5)
+      .reduce((sum, item) =3D&gt; sum + item.seconds, 0) / 10;  // Eventos =
+por 10 seg
+  }
+ =20
+  private calculateSpeedingPercentage(vehicleSpeedClass: VehicleSpeedClass[=
+], limit: number): number {
+    const totalTime =3D vehicleSpeedClass.reduce((sum, item) =3D&gt; sum + =
+item.seconds, 0);
+    const speedingTime =3D vehicleSpeedClass
+      .filter(item =3D&gt; item.from &gt; limit)
+      .reduce((sum, item) =3D&gt; sum + item.seconds, 0);
+   =20
+    return (speedingTime / totalTime) * 100;
+  }
+ =20
+  // ... m=C3=A1s m=C3=A9todos de c=C3=A1lculo
+}</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=8E=AFPrioridadesparaelHackathon">=F0=9F=8E=AF <strong>Prior=
+idades para el Hackathon</strong></h2>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-Fase1(D=C3=ADa1):MVP"><strong>Fase 1 (D=C3=ADa 1): MVP</strong></h=
+3>
+<p>=E2=9C=85 <code>accelerationClass</code> =E2=86=92 Harsh braking/acceler=
+ation <br>
+=E2=9C=85 <code>vehicleSpeedClass</code> =E2=86=92 Speeding detection <br>
+=E2=9C=85 <code>gnssPosition</code> =E2=86=92 Route compliance <br>
+=E2=9C=85 <code>engineTotalFuelUsed</code> =E2=86=92 Fuel efficiency</p>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-Fase2(D=C3=ADa2):Refinamiento"><strong>Fase 2 (D=C3=ADa 2): Refina=
+miento</strong></h3>
+<p>=E2=9C=85 <code>brakePedalCounter</code> =E2=86=92 Braking frequency <br=
+>
+=E2=9C=85 <code>durationWheelbasedSpeedZero</code> =E2=86=92 Idle time <br>
+=E2=9C=85 <code>cruiseControlUsage</code> =E2=86=92 Professional driving</p=
+>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-Fase3(D=C3=ADa3):Bonus"><strong>Fase 3 (D=C3=ADa 3): Bonus</strong=
+></h3>
+<p>=E2=9C=85 <code>accelerationPedalPositionClass</code> =E2=86=92 Driving =
+style <br>
+=E2=9C=85 <code>tellTaleInfo</code> =E2=86=92 Vehicle health correlation</p=
+>
+<p></p>
+<h1 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=8C=B1HuelladeCarbono:BeneficioSecundariodelSistema">=F0=9F=
+=8C=B1 <strong>Huella de Carbono: Beneficio Secundario del Sistema</strong>=
+</h1>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=93=8AConexi=C3=B3nNatural:Eficiencia=3DMenosEmisiones">=F0=
+=9F=93=8A <strong>Conexi=C3=B3n Natural: Eficiencia =3D Menos Emisiones</st=
+rong></h2>
+<p>El sistema de scoring <strong>ya calcula todo lo necesario</strong> para=
+ medir huella de carbono:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// MISM=
+O dato usado para Efficiency Score
+const fuelConsumption =3D engineTotalFuelUsed / 1000000;  // litros
+
+// Conversi=C3=B3n directa a CO2:
+const CO2_PER_LITER_DIESEL =3D 2.68;  // kg CO2 por litro
+const totalCO2Emissions =3D fuelConsumption * CO2_PER_LITER_DIESEL;  // kg =
+CO2</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=8E=AFImplementaci=C3=B3n:3Niveles">=F0=9F=8E=AF <strong>Imp=
+lementaci=C3=B3n: 3 Niveles</strong></h2>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-1=EF=B8=8F=E2=83=A3NivelIndividual:CarbonScoredelConductor"><stron=
+g>1=EF=B8=8F=E2=83=A3 Nivel Individual: Carbon Score del Conductor</strong>=
+</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">interfa=
+ce DriverCarbonProfile {
+  driverId: number;
+  driverName: string;
+ =20
+  // M=C3=A9tricas de carbono
+  totalCO2Emissions: number;        // kg CO2 emitidos
+  co2PerKm: number;                 // kg CO2/km (benchmark clave)
+  co2Saved: number;                 // vs promedio de flota
+ =20
+  // Correlaci=C3=B3n con comportamiento
+  safetyScore: number;              // Ya lo tenemos
+  efficiencyScore: number;          // Ya lo tenemos
+  carbonEfficiencyRank: number;     // 1-10 (10 =3D m=C3=A1s eco)
+}</pre>
+</div>
+</div>
+<p><strong>Insight clave:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Conduct=
+or con Safety Score 95 =E2=86=92 CO2/km: 0.28 kg =E2=9C=85
+Conductor con Safety Score 75 =E2=86=92 CO2/km: 0.35 kg =E2=9A=A0=EF=B8=8F
+
+Diferencia =3D 25% m=C3=A1s emisiones por conducci=C3=B3n agresiva</pre>
+</div>
+</div>
+<hr>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-2=EF=B8=8F=E2=83=A3NivelRoadmap:HuelladeCarbonoporViaje"><strong>2=
+=EF=B8=8F=E2=83=A3 Nivel Roadmap: Huella de Carbono por Viaje</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">interfa=
+ce RoadmapCarbonReport {
+  roadmapCode: string;
+  route: string;
+ =20
+  // Calculado vs Planificado
+  plannedCO2: number;               // Basado en distancia + veh=C3=ADculo =
+base
+  actualCO2: number;                // Medido por Scania
+  carbonEfficiency: number;         // actualCO2 / plannedCO2 (ideal: &lt; =
+1.0)
+ =20
+  // Factores de impacto
+  excessIdleCO2: number;            // Emisiones por tiempo en ralent=C3=AD
+  aggressiveDrivingCO2: number;     // Emisiones extra por conducci=C3=B3n =
+agresiva
+  speedingCO2: number;              // Emisiones extra por exceso de veloci=
+dad
+}</pre>
+</div>
+</div>
+<p><strong>Ejemplo real del viaje analizado:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Viaje: =
+Buenos Aires =E2=86=92 Mendoza (1,250 km)
+
+=F0=9F=93=8A AN=C3=81LISIS DE CARBONO:
+
+Consumo total: 55,369 litros (del JSON)
+CO2 emitido: 148,389 kg CO2
+CO2/km: 0.297 kg/km
+
+DESGLOSE:
+=E2=94=9C=E2=94=80 Conducci=C3=B3n normal:     120,000 kg CO2 (81%)
+=E2=94=9C=E2=94=80 Tiempo en ralent=C3=AD:      18,000 kg CO2 (12%) =E2=9A=
+=A0=EF=B8=8F EVITABLE
+=E2=94=9C=E2=94=80 Conducci=C3=B3n agresiva:     7,000 kg CO2 (5%)  =E2=9A=
+=A0=EF=B8=8F EVITABLE =20
+=E2=94=94=E2=94=80 Excesos de velocidad:    3,389 kg CO2 (2%)  =E2=9A=A0=EF=
+=B8=8F EVITABLE
+
+=F0=9F=92=A1 POTENCIAL DE AHORRO: 28,389 kg CO2 (19%)
+   Con mejor conductor: 119,000 kg CO2 total</pre>
+</div>
+</div>
+<hr>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-3=EF=B8=8F=E2=83=A3NivelFlota:Certificaci=C3=B3nyReportesESG"><str=
+ong>3=EF=B8=8F=E2=83=A3 Nivel Flota: Certificaci=C3=B3n y Reportes ESG</str=
+ong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">interfa=
+ce FleetCarbonDashboard {
+  period: string;  // "Octubre 2025"
+ =20
+  // M=C3=A9tricas agregadas
+  totalCO2Emissions: number;        // Toneladas CO2
+  co2Reduction: number;             // % vs mes anterior
+  carbonSavings: number;            // kg CO2 ahorrados
+ =20
+  // Equivalencias (para comunicaci=C3=B3n)
+  treesEquivalent: number;          // =C3=81rboles necesarios para compens=
+ar
+  carsEquivalent: number;           // Autos equivalentes
+ =20
+  // Segmentaci=C3=B3n
+  topEcoDrivers: DriverCarbonProfile[];
+  highEmittersDrivers: DriverCarbonProfile[];
+ =20
+  // Proyecci=C3=B3n
+  monthlyTrend: number[];           // Evoluci=C3=B3n =C3=BAltimos 6 meses
+  projectedAnnualReduction: number; // Reducci=C3=B3n proyectada
+}</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=8E=A8Visualizaci=C3=B3nenDashboard">=F0=9F=8E=A8 <strong>Vi=
+sualizaci=C3=B3n en Dashboard</strong></h2>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-VistadelConductor:"><strong>Vista del Conductor:</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=E2=95=
+=94=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=97
+=E2=95=91  =F0=9F=8C=B1 TU IMPACTO AMBIENTAL - Ana Silva                =E2=
+=95=91
+=E2=95=A0=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=A3
+=E2=95=91                                                      =E2=95=91
+=E2=95=91  Octubre 2025                                        =E2=95=91
+=E2=95=91  =E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80  =E2=95=91
+=E2=95=91                                                      =E2=95=91
+=E2=95=91  CO2 Emitido:        2,450 kg                       =E2=95=91
+=E2=95=91  CO2/km:             0.26 kg =E2=AD=90 (15% bajo promedio)  =E2=
+=95=91
+=E2=95=91                                                      =E2=95=91
+=E2=95=91  =F0=9F=8C=B3 Compensaci=C3=B3n:                                 =
+   =E2=95=91
+=E2=95=91  Necesitas plantar 112 =C3=A1rboles para neutralizar     =E2=95=
+=91
+=E2=95=91                                                      =E2=95=91
+=E2=95=91  =F0=9F=92=9A CO2 Ahorrado vs promedio:                       =E2=
+=95=91
+=E2=95=91  =E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=E2=96=93=
+=E2=96=91=E2=96=91=E2=96=91 435 kg CO2 ahorrados                   =E2=95=
+=91
+=E2=95=91  (=3D 2 vuelos BA-Mendoza en avi=C3=B3n)                  =E2=95=
+=91
+=E2=95=91                                                      =E2=95=91
+=E2=95=91  =F0=9F=93=8A Tu Ranking Eco:                                 =E2=
+=95=91
+=E2=95=91  #3 de 50 conductores =F0=9F=A5=89                            =E2=
+=95=91
+=E2=95=91                                                      =E2=95=91
+=E2=95=91  =F0=9F=8E=AF PR=C3=93XIMA META:                                 =
+  =E2=95=91
+=E2=95=91  Reduce tiempo en ralent=C3=AD 10% =E2=86=92 -50 kg CO2/mes     =
+=E2=95=91
+=E2=95=91                                                      =E2=95=91
+=E2=95=9A=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=
+=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=
+=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=
+=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=90=E2=95=9D</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=92=BCCasosdeUsoparaClientes">=F0=9F=92=BC <strong>Casos de =
+Uso para Clientes</strong></h2>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-A)Mineras(AltoImpacto)"><strong>A) Mineras (Alto Impacto)</strong>=
+</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Problem=
+a: Regulaciones ambientales cada vez m=C3=A1s estrictas
+Soluci=C3=B3n:=20
+- Reportes autom=C3=A1ticos de emisiones por operaci=C3=B3n
+- Certificaci=C3=B3n ISO 14064 (Huella de Carbono)
+- Bonos verdes para conductores eco-eficientes
+
+ROI: Multas evitadas + Acceso a mercados "green"</pre>
+</div>
+</div>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-B)EmpresasconCompromisosESG"><strong>B) Empresas con Compromisos E=
+SG</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Problem=
+a: Necesitan reportar m=C3=A9tricas ESG a inversores
+Soluci=C3=B3n:
+- Dashboard ejecutivo con KPIs de carbono
+- Comparaci=C3=B3n con industria (benchmarking)
+- Evidencia de mejora continua
+
+Valor: Mejor valoraci=C3=B3n de la empresa + Acceso a capital ESG</pre>
+</div>
+</div>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-C)Gobierno/LicitacionesP=C3=BAblicas"><strong>C) Gobierno/Licitaci=
+ones P=C3=BAblicas</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Problem=
+a: Licitaciones piden "flota sustentable"
+Soluci=C3=B3n:
+- Certificaci=C3=B3n de flota con scoring de carbono
+- Reportes autom=C3=A1ticos para auditor=C3=ADas
+- Diferenciaci=C3=B3n competitiva
+
+Valor: Ganar licitaciones con criterios ambientales</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=93=88Integraci=C3=B3nconSistemadeRecomendaci=C3=B3n">=F0=9F=
+=93=88 <strong>Integraci=C3=B3n con Sistema de Recomendaci=C3=B3n</strong><=
+/h2>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// Expa=
+ndir el recommendation engine
+
+interface DriverRecommendationWithCarbon {
+  // Scoring original
+  compatibilityScore: number;
+  safetyScore: number;
+ =20
+  // NUEVO: Carbon score
+  carbonEfficiencyScore: number;  // 0-100
+  estimatedCO2Emission: number;   // kg CO2 para este viaje
+ =20
+  reasoning: string[];
+}
+
+// Ejemplo de recomendaci=C3=B3n:
+{
+  driverId: 5,
+  driverName: "Ana Silva",
+  compatibilityScore: 96,
+  safetyScore: 95,
+  carbonEfficiencyScore: 92,  // =F0=9F=8C=B1 NUEVO
+  estimatedCO2Emission: 285,  // kg CO2 (vs 340 kg promedio)
+ =20
+  reasoning: [
+    "Safety score excepcional (95/100)",
+    "Certificada para cargas peligrosas",
+    "=F0=9F=8C=B1 15% menos emisiones que promedio de flota",  // =F0=9F=8C=
+=B1 NUEVO
+    "=F0=9F=8C=B3 Ahorrar=C3=A1 ~55 kg CO2 en este viaje"           // =F0=
+=9F=8C=B1 NUEVO
+  ]
+}</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=8E=AFValorAgregadoparaelPitch">=F0=9F=8E=AF <strong>Valor A=
+gregado para el Pitch</strong></h2>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-Slideadicionalenpresentaci=C3=B3n:"><strong>Slide adicional en pre=
+sentaci=C3=B3n:</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=E2=94=
+=8C=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=90
+=E2=94=82  =F0=9F=92=A1 BONUS: CERTIFICACI=C3=93N DE HUELLA DE CARBONO     =
+  =E2=94=82
+=E2=94=9C=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=A4
+=E2=94=82                                                     =E2=94=82
+=E2=94=82  El mismo sistema que mejora la seguridad tambi=C3=A9n: =E2=94=82
+=E2=94=82                                                     =E2=94=82
+=E2=94=82  =E2=9C=85 Mide huella de carbono en tiempo real          =E2=94=
+=82
+=E2=94=82  =E2=9C=85 Identifica conductores eco-eficientes          =E2=94=
+=82
+=E2=94=82  =E2=9C=85 Genera reportes ESG autom=C3=A1ticos                =
+=E2=94=82
+=E2=94=82  =E2=9C=85 Proyecta reducci=C3=B3n de emisiones                =
+=E2=94=82
+=E2=94=82                                                     =E2=94=82
+=E2=94=82  =F0=9F=93=8A IMPACTO ESTIMADO:                              =E2=
+=94=82
+=E2=94=82                                                     =E2=94=82
+=E2=94=82  =E2=80=A2 15-20% reducci=C3=B3n de emisiones                   =
+=E2=94=82
+=E2=94=82  =E2=80=A2 Certificaci=C3=B3n ISO 14064 lista                   =
+=E2=94=82
+=E2=94=82  =E2=80=A2 Acceso a bonos/incentivos verdes                =E2=94=
+=82
+=E2=94=82                                                     =E2=94=82
+=E2=94=82  =F0=9F=8C=8D Mejor seguridad =3D Menor huella de carbono      =
+=E2=94=82
+=E2=94=82                                                     =E2=94=82
+=E2=94=94=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=
+=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=
+=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=80=
+=E2=94=80=E2=94=80=E2=94=80=E2=94=80=E2=94=98</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=9A=80Implementaci=C3=B3nR=C3=A1pida(Hackathon)">=F0=9F=9A=
+=80 <strong>Implementaci=C3=B3n R=C3=A1pida (Hackathon)</strong></h2>
+<h3 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-C=C3=B3digom=C3=ADnimoparademostrar:"><strong>C=C3=B3digo m=C3=ADn=
+imo para demostrar:</strong></h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// src/=
+driver-ai/services/carbon-calculator.service.ts
+
+@Injectable()
+export class CarbonCalculatorService {
+  private readonly CO2_PER_LITER =3D 2.68;  // kg CO2
+  private readonly TREES_PER_TON =3D 45.8;   // =C3=A1rboles/ton CO2
+ =20
+  calculateCO2Emissions(fuelUsedMilliliters: number): number {
+    const liters =3D fuelUsedMilliliters / 1000000;
+    return liters * this.CO2_PER_LITER;
+  }
+ =20
+  calculateCO2PerKm(co2Total: number, distanceMeters: number): number {
+    const km =3D distanceMeters / 1000;
+    return co2Total / km;
+  }
+ =20
+  compareToFleetAverage(
+    driverCO2PerKm: number,=20
+    fleetAverageCO2PerKm: number
+  ): {
+    percentageDifference: number;
+    co2Saved: number;
+    ranking: 'ECO_CHAMPION' | 'GOOD' | 'AVERAGE' | 'NEEDS_IMPROVEMENT';
+  } {
+    const diff =3D ((driverCO2PerKm - fleetAverageCO2PerKm) / fleetAverageC=
+O2PerKm) * 100;
+   =20
+    let ranking: any =3D 'AVERAGE';
+    if (diff &lt; -10) ranking =3D 'ECO_CHAMPION';
+    else if (diff &lt; 0) ranking =3D 'GOOD';
+    else if (diff &gt; 15) ranking =3D 'NEEDS_IMPROVEMENT';
+   =20
+    return {
+      percentageDifference: diff,
+      co2Saved: fleetAverageCO2PerKm - driverCO2PerKm,
+      ranking
+    };
+  }
+ =20
+  generateEquivalences(co2Kg: number) {
+    const tons =3D co2Kg / 1000;
+   =20
+    return {
+      trees: Math.round(tons * this.TREES_PER_TON),
+      flights: Math.round(co2Kg / 217),  // BA-Mendoza flight
+      cars: Math.round(co2Kg / 4600),    // 1 auto promedio anual
+    };
+  }
+}</pre>
+</div>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=8E=81BeneficiosSinCostoExtra">=F0=9F=8E=81 <strong>Benefici=
+os Sin Costo Extra</strong></h2>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"f7=
+c710ca-8737-4623-b136-1bc9b3c725fc" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Beneficio</p></th>
+<th class=3D"confluenceTh">
+<p>Esfuerzo Adicional</p></th>
+<th class=3D"confluenceTh">
+<p>Impacto</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>C=C3=A1lculo de CO2</strong></p></td>
+<td class=3D"confluenceTd">
+<p>M=C3=ADnimo (1 f=C3=B3rmula)</p></td>
+<td class=3D"confluenceTd">
+<p>Alto</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Dashboard carbono</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Bajo (reutiliza UI)</p></td>
+<td class=3D"confluenceTd">
+<p>Medio</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Reportes ESG</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Medio (templates)</p></td>
+<td class=3D"confluenceTd">
+<p>Alto</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><strong>Certificaciones</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Bajo (export PDF)</p></td>
+<td class=3D"confluenceTd">
+<p>Muy Alto</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id=3D"id-[RUMBO.AI]:Sistemainteligentedescoringyrecomendaci=C3=B3ndecon=
+ductores-=F0=9F=8C=9FResumenEjecutivo">=F0=9F=8C=9F <strong>Resumen Ejecuti=
+vo</strong></h2>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">=F0=9F=
+=8E=AF PROPUESTA DE VALOR DUAL:
+
+1=EF=B8=8F=E2=83=A3 SEGURIDAD (Principal)
+   =E2=86=92 Reduce accidentes 28%
+   =E2=86=92 Mejora asignaciones 40%
+   =E2=86=92 ROI: 380%
+
+2=EF=B8=8F=E2=83=A3 SOSTENIBILIDAD (Bonus) =F0=9F=8C=B1
+   =E2=86=92 Reduce emisiones 15-20%
+   =E2=86=92 Certificaci=C3=B3n lista
+   =E2=86=92 Diferenciaci=C3=B3n ESG
+  =20
+=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=
+=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=
+=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=
+=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=
+=94=81
+
+=F0=9F=92=A1 MISMO SISTEMA, DOBLE IMPACTO:
+   "Los mejores conductores no solo=20
+    son m=C3=A1s seguros, tambi=C3=A9n son=20
+    m=C3=A1s sustentables"
+
+=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=
+=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=
+=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=
+=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=94=81=E2=
+=94=81
+
+=E2=9C=85 Perfecto para pitch de hackathon:
+   =E2=80=A2 Innovaci=C3=B3n t=C3=A9cnica (IA)
+   =E2=80=A2 Impacto social (seguridad)
+   =E2=80=A2 Impacto ambiental (carbono) =F0=9F=8C=B1</pre>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_10_1802914119.1761932151971
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/7b7fdbe86899236af38935e0dd0d3af75026324e37663a818c0b185f9b031605
+
+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
+fwf+ESxaYzi5S1aBAAAAAElFTkSuQmCC
+------=_Part_10_1802914119.1761932151971--
