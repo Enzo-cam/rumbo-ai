@@ -326,6 +326,15 @@ def generate_processing_report(df: pd.DataFrame) -> str:
     report.append(f"Overall Score: {df['driver_score_base'].mean():.2f}")
     report.append("")
 
+    # CO2 metrics
+    report.append("CO2 EMISSIONS")
+    report.append("-" * 80)
+    report.append(f"Average CO2 per km: {df['avg_co2_per_km'].mean():.3f} kg")
+    report.append(f"Total CO2 emissions: {df['total_co2_emissions_kg'].sum():,.0f} kg")
+    report.append(f"CO2 from idling: {df['total_co2_from_idling_kg'].sum():,.0f} kg ({df['total_co2_from_idling_kg'].sum() / df['total_co2_emissions_kg'].sum() * 100:.1f}% of total)")
+    report.append(f"Carbon efficiency score: {df['carbon_efficiency_score_avg'].mean():.2f}")
+    report.append("")
+
     # Top performers
     report.append("TOP 5 DRIVERS (by overall score)")
     report.append("-" * 80)
